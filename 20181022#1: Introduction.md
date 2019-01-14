@@ -11,7 +11,7 @@
 
 ### [Notes]
 
-####1. 社企定義與發問
+#### 1. 社企定義與發問
 
 - Social entrepreneur (n.) a person who tries to solve social problems using entrepreneurial skills.
 
