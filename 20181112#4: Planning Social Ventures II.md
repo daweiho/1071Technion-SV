@@ -1,4 +1,4 @@
-## 20181112\#4: Planning Social Ventures II
+## 20181112#4: Planning Social Ventures II
 
 ### [Preview materials]
 
