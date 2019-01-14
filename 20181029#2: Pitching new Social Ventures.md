@@ -5,7 +5,7 @@
 
 **→ Examples of successful Social Ventures:**
 
-- [The 10 greatest social entrepreneurs of all time*](https://socialnomics.net/2012/07/03/the-10-greatest-social-entrepreneurs-of-all-time/)
+- [The 10 greatest social entrepreneurs of all time](https://socialnomics.net/2012/07/03/the-10-greatest-social-entrepreneurs-of-all-time/)*
 - [The 10 fastest growing Social Ventures in 2016](https://www.investopedia.com/articles/investing/021916/10-fastest-growing-social-ventures-2016.asp)
 - [11 Inspiring Examples of Social Entrepreneurs Pitching their Social Ventures](https://www.plusacumen.org/journal/11-inspiring-examples-social-entrepreneurs-pitching-their-social-ventures)
 
