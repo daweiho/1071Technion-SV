@@ -2,8 +2,8 @@
 
 ### [Preview materials]
 
-- [How to be a social entrepreneur?](https://youtu.be/N8LVa9pb-n8) (by A. Stoll, 18 min - * from minute 7:30)
-- [Social entrepreneurs: Pioneering social change](https://youtu.be/jk5LI_WcosQ) (9 min*)
+- [How to be a social entrepreneur?](https://youtu.be/N8LVa9pb-n8) (by A. Stoll, 18 min - from minute 7:30)*
+- [Social entrepreneurs: Pioneering social change](https://youtu.be/jk5LI_WcosQ) (9 min)*
 - [Changing the world through social entrepreneurship](https://youtu.be/Vvq9YgoJabY) (by W. Verloop, 13 min - start watching at minute 6:30)
 - [Social Entrepreneurship: The case for definition](http://www.ngobiz.org/picture/File/Social%20Enterpeuneur-The%20Case%20of%20Definition.pdf)
 
