@@ -36,4 +36,4 @@
 
 #### 資訊圖表：新創生存率
 
-![5975623857047a04aaa272fb_Startup Survival Rates Infographic](assets/5975623857047a04aaa272fb_Startup Survival Rates Infographic.jpg)
+![5975623857047a04aaa272fb_Startup Survival Rates Infographic](assets/5975623857047a04aaa272fb_StartupSurvivalRatesInfographic.jpg)
