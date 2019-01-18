@@ -92,7 +92,7 @@
 
 #### 2. 生意五部分
 
-![5part Biz](assets/5part Biz.jpg)
+![5partBiz](assets/5partBiz.jpg)
 
 
 
