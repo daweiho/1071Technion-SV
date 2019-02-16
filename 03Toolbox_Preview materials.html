@@ -1,0 +1,539 @@
+<!doctype html>
+<html style='font-size:17px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>03Toolbox_Preview materials</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: rgb(255, 255, 255); --text-color: rgb(51, 51, 51); --select-text-bg-color: rgb(181, 214, 252); --select-text-font-color: auto; --monospace: 'Lucida Console', Consolas, Courier, monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { page-break-after: avoid; page-break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { page-break-inside: avoid; page-break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; page-break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; page-break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { page-break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; page-break-after: avoid; page-break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; page-break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: '.'; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { -webkit-transition: none; transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: 'Segoe UI Symbol', sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('file:///Users/victor/Library/Application%20Support/abnerworks.Typora/themes/github/400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('file:///Users/victor/Library/Application%20Support/abnerworks.Typora/themes/github/400i.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('file:///Users/victor/Library/Application%20Support/abnerworks.Typora/themes/github/700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('file:///Users/victor/Library/Application%20Support/abnerworks.Typora/themes/github/700i.woff') format('woff');
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("file:///Users/victor/Library/Application%20Support/images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0.2em 1em;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name='header-n0' class='md-header-anchor '></a>SV Toolbox</h1><p><code>Wei-Jung HO // r05247008@ntu.edu.tw</code></p><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#header-n0">SV Toolbox</a></span><span class="md-toc-item md-toc-h2" data-ref="n5"><a class="md-toc-inner" href="#header-n5">20181022#1: Introduction</a></span><span class="md-toc-item md-toc-h3" data-ref="n6"><a class="md-toc-inner" href="#header-n6">[Preview materials]</a></span><span class="md-toc-item md-toc-h3" data-ref="n17"><a class="md-toc-inner" href="#header-n17">[Notes]</a></span><span class="md-toc-item md-toc-h4" data-ref="n18"><a class="md-toc-inner" href="#header-n18">1. 社企定義與發問</a></span><span class="md-toc-item md-toc-h4" data-ref="n35"><a class="md-toc-inner" href="#header-n35">2. 社會企業分類</a></span><span class="md-toc-item md-toc-h3" data-ref="n40"><a class="md-toc-inner" href="#header-n40">[Case study]</a></span><span class="md-toc-item md-toc-h2" data-ref="n55"><a class="md-toc-inner" href="#header-n55">20181029#2: Pitching new Social Ventures</a></span><span class="md-toc-item md-toc-h3" data-ref="n56"><a class="md-toc-inner" href="#header-n56">[Preview materials]</a></span><span class="md-toc-item md-toc-h3" data-ref="n74"><a class="md-toc-inner" href="#header-n74">[Case study]</a></span><span class="md-toc-item md-toc-h2" data-ref="n86"><a class="md-toc-inner" href="#header-n86">20181105#3: Planning Social Ventures I</a></span><span class="md-toc-item md-toc-h3" data-ref="n87"><a class="md-toc-inner" href="#header-n87">[Preview materials]</a></span><span class="md-toc-item md-toc-h3" data-ref="n113"><a class="md-toc-inner" href="#header-n113">[Suggestion readings]</a></span><span class="md-toc-item md-toc-h3" data-ref="n128"><a class="md-toc-inner" href="#header-n128">[Notes]＊＊＊</a></span><span class="md-toc-item md-toc-h4" data-ref="n129"><a class="md-toc-inner" href="#header-n129">1. 精實創業</a></span><span class="md-toc-item md-toc-h5" data-ref="n131"><a class="md-toc-inner" href="#header-n131"><strong>精實創業：在反覆試驗中摸索前行</strong></a></span><span class="md-toc-item md-toc-h5" data-ref="n138"><a class="md-toc-inner" href="#header-n138">萬一開頭就走錯！科學方法之外還需要同理心</a></span><span class="md-toc-item md-toc-h4" data-ref="n158"><a class="md-toc-inner" href="#header-n158">2. 發現導向式規劃</a></span><span class="md-toc-item md-toc-h4" data-ref="n176"><a class="md-toc-inner" href="#header-n176">3. 商業模式九宮格</a></span><span class="md-toc-item md-toc-h4" data-ref="n197"><a class="md-toc-inner" href="#header-n197">4. 價值主張</a></span><span class="md-toc-item md-toc-h2" data-ref="n201"><a class="md-toc-inner" href="#header-n201">20181112#4: Planning Social Ventures II</a></span><span class="md-toc-item md-toc-h3" data-ref="n202"><a class="md-toc-inner" href="#header-n202">[Preview materials]</a></span><span class="md-toc-item md-toc-h3" data-ref="n226"><a class="md-toc-inner" href="#header-n226">[Suggestion readings]</a></span><span class="md-toc-item md-toc-h3" data-ref="n248"><a class="md-toc-inner" href="#header-n248">[Notes]＊＊</a></span><span class="md-toc-item md-toc-h4" data-ref="n249"><a class="md-toc-inner" href="#header-n249">1. 三重底線</a></span><span class="md-toc-item md-toc-h4" data-ref="n288"><a class="md-toc-inner" href="#header-n288">2. 設計思考</a></span><span class="md-toc-item md-toc-h2" data-ref="n307"><a class="md-toc-inner" href="#header-n307">20181119#5: Communicating Social Ventures I</a></span><span class="md-toc-item md-toc-h3" data-ref="n308"><a class="md-toc-inner" href="#header-n308">[Preview materials]</a></span><span class="md-toc-item md-toc-h3" data-ref="n332"><a class="md-toc-inner" href="#header-n332">[Suggestion readings]</a></span><span class="md-toc-item md-toc-h3" data-ref="n350"><a class="md-toc-inner" href="#header-n350">[Notes]＊</a></span><span class="md-toc-item md-toc-h4" data-ref="n351"><a class="md-toc-inner" href="#header-n351">1. 人物誌</a></span><span class="md-toc-item md-toc-h4" data-ref="n364"><a class="md-toc-inner" href="#header-n364">2. 使用者故事</a></span><span class="md-toc-item md-toc-h4" data-ref="n379"><a class="md-toc-inner" href="#header-n379">3. 遊戲化</a></span><span class="md-toc-item md-toc-h5" data-ref="n380"><a class="md-toc-inner" href="#header-n380">什麼是遊戲化？</a></span><span class="md-toc-item md-toc-h5" data-ref="n390"><a class="md-toc-inner" href="#header-n390"><strong>周郁凱遊戲化的八角理論</strong></a></span><span class="md-toc-item md-toc-h5" data-ref="n414"><a class="md-toc-inner" href="#header-n414">延伸閱讀</a></span><span class="md-toc-item md-toc-h2" data-ref="n430"><a class="md-toc-inner" href="#header-n430">20181126&amp;1203#6: RobinFood Field trip &amp; Hanukkah Vacation</a></span><span class="md-toc-item md-toc-h3" data-ref="n431"><a class="md-toc-inner" href="#header-n431">[Suggestion readings]</a></span><span class="md-toc-item md-toc-h3" data-ref="n449"><a class="md-toc-inner" href="#header-n449">[Notes]</a></span><span class="md-toc-item md-toc-h4" data-ref="n450"><a class="md-toc-inner" href="#header-n450">1. 動機心理學</a></span><span class="md-toc-item md-toc-h4" data-ref="n476"><a class="md-toc-inner" href="#header-n476">2. JTBD理論</a></span><span class="md-toc-item md-toc-h5" data-ref="n484"><a class="md-toc-inner" href="#header-n484">Jobs to be done重要性</a></span><span class="md-toc-item md-toc-h2" data-ref="n498"><a class="md-toc-inner" href="#header-n498">20181210#7: Communicating Social Ventures II</a></span><span class="md-toc-item md-toc-h3" data-ref="n499"><a class="md-toc-inner" href="#header-n499">[Preview materials]</a></span><span class="md-toc-item md-toc-h3" data-ref="n524"><a class="md-toc-inner" href="#header-n524">[Suggestion readings]</a></span><span class="md-toc-item md-toc-h3" data-ref="n531"><a class="md-toc-inner" href="#header-n531">[Notes]</a></span><span class="md-toc-item md-toc-h4" data-ref="n532"><a class="md-toc-inner" href="#header-n532">1. 標竿分析法</a></span><span class="md-toc-item md-toc-h5" data-ref="n534"><a class="md-toc-inner" href="#header-n534">1.1 前言</a></span><span class="md-toc-item md-toc-h5" data-ref="n537"><a class="md-toc-inner" href="#header-n537">1.2 定義</a></span><span class="md-toc-item md-toc-h5" data-ref="n564"><a class="md-toc-inner" href="#header-n564">1.3 類型</a></span><span class="md-toc-item md-toc-h5" data-ref="n575"><a class="md-toc-inner" href="#header-n575">1.4 重要觀念</a></span><span class="md-toc-item md-toc-h4" data-ref="n588"><a class="md-toc-inner" href="#header-n588">2. 生意五部分</a></span><span class="md-toc-item md-toc-h4" data-ref="n591"><a class="md-toc-inner" href="#header-n591">3. 三種產品廣告</a></span><span class="md-toc-item md-toc-h2" data-ref="n600"><a class="md-toc-inner" href="#header-n600">20181218#8: Facing dilemmas/ failure of Social Ventures</a></span><span class="md-toc-item md-toc-h3" data-ref="n601"><a class="md-toc-inner" href="#header-n601">[Preview materials]</a></span><span class="md-toc-item md-toc-h3" data-ref="n631"><a class="md-toc-inner" href="#header-n631">[Suggestion readings]</a></span><span class="md-toc-item md-toc-h3" data-ref="n642"><a class="md-toc-inner" href="#header-n642">[Notes]</a></span><span class="md-toc-item md-toc-h4" data-ref="n643"><a class="md-toc-inner" href="#header-n643">資訊圖表：新創生存率</a></span><span class="md-toc-item md-toc-h2" data-ref="n647"><a class="md-toc-inner" href="#header-n647">20181224#9: Funding Social Ventures</a></span><span class="md-toc-item md-toc-h3" data-ref="n648"><a class="md-toc-inner" href="#header-n648">[Preview materials]</a></span><span class="md-toc-item md-toc-h3" data-ref="n671"><a class="md-toc-inner" href="#header-n671">[Suggestion readings]</a></span><span class="md-toc-item md-toc-h3" data-ref="n685"><a class="md-toc-inner" href="#header-n685">[Notes]</a></span><span class="md-toc-item md-toc-h4" data-ref="n686"><a class="md-toc-inner" href="#header-n686">1. 群眾募資/眾籌</a></span><span class="md-toc-item md-toc-h4" data-ref="n705"><a class="md-toc-inner" href="#header-n705">2. 盡責調查</a></span><span class="md-toc-item md-toc-h2" data-ref="n714"><a class="md-toc-inner" href="#header-n714">20181231#10: Measuring performance &amp; impact of Social Ventures</a></span><span class="md-toc-item md-toc-h3" data-ref="n716"><a class="md-toc-inner" href="#header-n716">[Preview materials]</a></span><span class="md-toc-item md-toc-h3" data-ref="n744"><a class="md-toc-inner" href="#header-n744">[Suggestion readings]</a></span><span class="md-toc-item md-toc-h3" data-ref="n757"><a class="md-toc-inner" href="#header-n757">[Notes]</a></span><span class="md-toc-item md-toc-h4" data-ref="n758"><a class="md-toc-inner" href="#header-n758">1. 改變理論</a></span><span class="md-toc-item md-toc-h5" data-ref="n759"><a class="md-toc-inner" href="#header-n759">定義</a></span><span class="md-toc-item md-toc-h5" data-ref="n770"><a class="md-toc-inner" href="#header-n770">非營利/慈善組織的影響力評估</a></span><span class="md-toc-item md-toc-h4" data-ref="n796"><a class="md-toc-inner" href="#header-n796">2. 衡量你的社會影響力</a></span><span class="md-toc-item md-toc-h5" data-ref="n799"><a class="md-toc-inner" href="#header-n799">瞭解改變如何發生，是放大改變規模的第一步</a></span><span class="md-toc-item md-toc-h5" data-ref="n811"><a class="md-toc-inner" href="#header-n811">衡量社會影響力知易行難？解析 3 大門檻，提供解方助組織走向「知行合一」</a></span><span class="md-toc-item md-toc-h2" data-ref="n818"><a class="md-toc-inner" href="#header-n818">20190107#11: Sustainability and scaling Social Ventures</a></span><span class="md-toc-item md-toc-h3" data-ref="n819"><a class="md-toc-inner" href="#header-n819">[Preview materials]</a></span><span class="md-toc-item md-toc-h3" data-ref="n845"><a class="md-toc-inner" href="#header-n845">[Suggestion readings]</a></span><span class="md-toc-item md-toc-h3" data-ref="n854"><a class="md-toc-inner" href="#header-n854">[Notes]</a></span><span class="md-toc-item md-toc-h4" data-ref="n855"><a class="md-toc-inner" href="#header-n855">1. 永續性</a></span><span class="md-toc-item md-toc-h4" data-ref="n861"><a class="md-toc-inner" href="#header-n861">2. 規模化</a></span><span class="md-toc-item md-toc-h2" data-ref="n867"><a class="md-toc-inner" href="#header-n867">20190114#12: Leadership and presentation skills</a></span><span class="md-toc-item md-toc-h3" data-ref="n868"><a class="md-toc-inner" href="#header-n868">[Preview materials]</a></span></p></div><p>&nbsp;</p><h2><a name='header-n5' class='md-header-anchor '></a>20181022#1: Introduction</h2><h3><a name='header-n6' class='md-header-anchor '></a>[Preview materials]</h3><ul><li><a href='https://youtu.be/N8LVa9pb-n8'>How to be a social entrepreneur?</a> (by A. Stoll, 18 min - from minute 7:30)*</li><li><a href='https://youtu.be/jk5LI_WcosQ'>Social entrepreneurs: Pioneering social change</a> (9 min)*</li><li><a href='https://youtu.be/Vvq9YgoJabY'>Changing the world through social entrepreneurship</a> (by W. Verloop, 13 min - start watching at minute 6:30)</li><li><a href='http://www.ngobiz.org/picture/File/Social%20Enterpeuneur-The%20Case%20of%20Definition.pdf'>Social Entrepreneurship: The case for definition</a></li></ul><p>&nbsp;</p><h3><a name='header-n17' class='md-header-anchor '></a>[Notes]</h3><h4><a name='header-n18' class='md-header-anchor '></a>1. 社企定義與發問</h4><ul><li><p>Social entrepreneur (n.) a person who tries to solve social problems using entrepreneurial skills.</p><ul><li>“<strong>Social Entrepreneur</strong> is not a traditional job, so you have to throw out all of the traditional questions,” Stoll says. “The traditional questions you ask yourself—that I asked myself when I was in your seat as a student—were these two big questions that freak out a lot of people. <strong>What do I want to be when I grow up?</strong> What am I going to do when I graduate?’ Let’s just get rid of those questions altogether, because I’ve got a better question. If you want to change the world, if you want to do social entrepreneurial work…the real question is <strong>what problem do you want to solve in the world?</strong> What problem out there just pisses you off? What problem makes you say, ‘Wow that’s frustrating. Why does that even happen?’ That’s how you become a social entrepreneur.”</li></ul></li></ul><figure><table><thead><tr><th style='text-align:left;' >Article</th><th><a href='https://www.weforum.org/agenda/2018/08/6-steps-to-become-a-successful-social-entrepreneur/'>6 steps to becoming a successful social entrepreneur</a></th><th><a href='https://www.forbes.com/sites/ericaswallow/2012/05/08/social-entrepreneurship/#2e90f87c71ca'>5 Clever Hacks for Becoming a Social Entrepreneur</a></th></tr></thead><tbody><tr><td style='text-align:left;' ><strong>steps</strong></td><td><strong>1. Find your passion</strong><br /><strong>2. Build a team culture</strong><br /><strong>3. Get started</strong><br /><strong>4. Keep at it (how to stay motivated and persevere in difficult times)</strong><br /><strong>5. Fund your venture &amp; grow organically</strong><br /><strong>6. Scale up</strong></td><td><strong>1. Identify a Social Problem</strong><br /><strong>2. Sign Strategic Partnerships</strong><br /><strong>3. Run It as a Business</strong><br /><strong>4. Make It Fun</strong><br /><br /><strong>5. Stay Committed</strong></td></tr></tbody></table></figure><p>&nbsp;</p><h4><a name='header-n35' class='md-header-anchor '></a>2. 社會企業分類</h4><ul><li>台灣常用的社會企業分類：用商業模式解決社會問題，依據組織傾向和商業/組織目標繪製出第一象限的知覺定位圖如下。</li></ul><p><img src='./assets/社企分類.gif' alt='社企分類' referrerPolicy='no-referrer' /></p><h3><a name='header-n40' class='md-header-anchor '></a>[Case study]</h3><ul><li><p>Muhammed Yunus and the Grameen Bank</p><ul><li><a href='https://www.seinsights.asia/story/387/130/388'>窮人的銀行家 - 淺談微型貸款（Microfinance） Part I</a></li><li><a href='https://www.seinsights.asia/story/387/130/637'>窮人的銀行家 - 淺談微型貸款（Microfinance） Part II</a></li><li><a href='https://www.cheers.com.tw/article/article.action?id=5057954'>諾貝爾和平獎得主尤努斯：一個人的影響力，沒有極限</a></li><li><a href='https://www.coolloud.org.tw/node/83207'>一顆包裹糖衣的毒藥，為何微型貸款不是扶貧的好選擇？</a>***</li></ul></li></ul><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n55' class='md-header-anchor '></a>20181029#2: Pitching new Social Ventures</h2><h3><a name='header-n56' class='md-header-anchor '></a>[Preview materials]</h3><p><strong>→ Examples of successful Social Ventures:</strong></p><ul><li><a href='https://socialnomics.net/2012/07/03/the-10-greatest-social-entrepreneurs-of-all-time/'>The 10 greatest social entrepreneurs of all time</a>*</li><li><a href='https://www.investopedia.com/articles/investing/021916/10-fastest-growing-social-ventures-2016.asp'>The 10 fastest growing Social Ventures in 2016</a></li><li><a href='https://www.plusacumen.org/journal/11-inspiring-examples-social-entrepreneurs-pitching-their-social-ventures'>11 Inspiring Examples of Social Entrepreneurs Pitching their Social Ventures</a></li></ul><p><strong>→ Successful Elevator Pitches:</strong></p><ul><li><a href='https://youtu.be/y1Y02_oZP8U'>How to perfect the elevator pitch</a> (1.5 min)*</li><li><a href='https://youtu.be/i6O98o2FRHw'>Elevator Pitch Winner - for cup ad</a></li><li><a href='https://youtu.be/nBZTDwOPXsc'>Emotional appeal</a> (5 min)</li></ul><p>&nbsp;</p><h3><a name='header-n74' class='md-header-anchor '></a>[Case study]</h3><ul><li><a href='https://youtu.be/VxtHHaMuVMg'>Sensibo</a>***</li><li><a href='https://youtu.be/RX_x3gyrNFw'>SuperMEAT</a>**</li><li><a href='https://youtu.be/sgWWXSEw0Dc'>The wheelbarrow</a>*</li><li><a href='https://youtu.be/2DsaKGTyyGA'>stojo biggie</a>*</li></ul><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n86' class='md-header-anchor '></a>20181105#3: Planning Social Ventures I</h2><h3><a name='header-n87' class='md-header-anchor '></a>[Preview materials]</h3><p><strong>→ Lean Startup:</strong></p><ul><li><a href='https://youtu.be/_a3s0IXSuxY'>What is it?</a> (1:45 min)***</li><li><a href='http://theleanstartup.com/principles'>What is it? THE LEAN STARTUP METHODOLOGY</a>*</li><li><a href='https://www.inc.com/magazine/201110/eric-ries-usability-testing-product-development.html'>Creating the lean Startup (E. Ries)</a></li></ul><p><strong>→ Discovery-driven planning:</strong></p><ul><li><a href='https://hbr.org/1995/07/discovery-driven-planning'>Discover-driven planning: What is it?</a> （<a href='https://www.hbrtaiwan.com/article_content_AR0000165.html'>中文版點我</a>）***</li><li><a href='https://hbr.org/2010/09/making-social-ventures-work'>Discovery-driven planning: making Social Ventures work</a>（<a href='https://www.hbrtaiwan.com/article_content_AR0000165.html'>中文版：落實創業五大準則</a>）</li><li><a href='https://youtu.be/FRzz9JJ6iiI'>Customer discovery: How to build a startup</a>* </li></ul><p><strong>→ Business Model Canvas:</strong></p><ul><li><a href='https://diytoolkit.org/tools/business-model-canvas/'>Business Model Canvas - what is it and why should I use it?</a>*</li><li><a href='https://www.alexandercowan.com/business-model-canvas-templates/'>Business Model Canvas - in detail</a>*</li><li><a href='https://blog.hubspot.com/marketing/write-value-proposition'>How to Write a Great Value Proposition?</a>*</li></ul><p>&nbsp;</p><h3><a name='header-n113' class='md-header-anchor '></a>[Suggestion readings]</h3><ul><li><a href='https://holidaybookworm.blogspot.com/2017/02/the-lean-startup-eric-ries-lean-startup.html'>假日書蟲：精實創業讀後感</a>***</li><li><a href='https://www.hbrtaiwan.com/article_content_AR0002324.html'>哈佛商業評論：精實創業改變全世界</a>***</li><li><a href='http://startupbeat.hkej.com/?p=38149'>創新拿鐵：用「設計思維」玩轉「精實創業」</a>***</li><li><a href='https://startuplatte.com/2016/10/19/lean_startup/'>創新拿鐵：創業圈當紅的精實創業，有哪3點迷思</a>***</li><li><a href='https://yowureport.com/8453/'>有物報告：《精實創業》失敗越快，成功越近</a>*</li><li><a href='https://www.cheers.com.tw/article/article.action?id=5068818'>Cheers：三張圖，找出新獲利模式</a>***</li></ul><p>&nbsp;</p><h3><a name='header-n128' class='md-header-anchor '></a>[Notes]＊＊＊</h3><h4><a name='header-n129' class='md-header-anchor '></a>1. 精實創業</h4><p><img src='assets/螢幕快照 2018-12-03 上午5.46.39.png' alt='螢幕快照 2018-12-03 上午5.46.39' referrerPolicy='no-referrer' /></p><h5><a name='header-n131' class='md-header-anchor '></a><strong>精實創業：在反覆試驗中摸索前行</strong></h5><p>「精實創業（Lean Startup）」，強調在面對高度不確定性的商業環境下，應該快速把「最小可行性產品」丟到市場驗證，然後藉由持續調整找出可獲利的商業模式。</p><p>2011年9月，矽谷創業家艾瑞克．萊斯（Eric Ries）發表「精實創業」（The Lean Startup）一書，創業圈從此有了另一番光景。推崇此一科學方法的創業家不再耗費數月研擬鉅細靡遺的營運計劃書，也不刻意追求功能完備的新產品，而是藉由重覆「製造—檢驗—學習」（Build-Measure-Learn）的歷程，推出「最小可行性產品」（Minimum Viable Product, MVP），進而搜集早期顧客意見然後反覆小幅調整，甚或進行關鍵「轉型」（Pivot），大幅改正創業初期的既定方向。</p><p>如今很多新創公司採用精實創業。套用Ries的話：「靠著人類直覺在充滿極度不確定性的情況下創造新產品與服務。」為了消除這種不確定性，他們採取「做就對了」（Just do it）的方法。公司可以藉由設定一連串的假設，並在這些假設之中發展出屬於自己的一套<strong>商業模式圖（Business Model Canvas）</strong>，藉此釐清帶給消費者與公司的價值，去創造出有別於混亂之中的秩序。</p><p>公司在進行產品開發前，應該事先問過上述那些問題，並實際走出辦公室與顧客接觸，這種方法被稱為<strong>顧客發展（Customer Development）</strong>。Ries說：「提早接觸顧客的目的不是為了獲得確切的答案。而是為了釐清潛在客戶的需求」。讓公司解決實際問題，並且針對需要的細節加以修改。</p><p>在這之後則是進行<strong>敏捷開發（Agile Development）</strong>，這種做法能讓管理者及時給予開發者幫助，在產品更新改良過程中增加人手以利開發。並且不斷針對客戶需求進行修正，做出原型再反覆測試，嘗試讓產品更加進步，藉此節省開發時間。此外，這種做法也能讓產品在被廣泛推出前，就已有穩定客群。</p><p><img src='assets/083d958f-723e-49fe-9bd2-6ee6a0475fa7.jpeg' alt='083d958f-723e-49fe-9bd2-6ee6a0475fa7' referrerPolicy='no-referrer' /></p><h5><a name='header-n138' class='md-header-anchor '></a>萬一開頭就走錯！科學方法之外還需要同理心</h5><p>以人為本的「設計思維」（Design Thinking）由享譽國際的創新設計公司IDEO執行長兼總裁提姆．布朗（Tim Brown）提出，原應用於產品設計，但隨著商業環境變得複雜，「設計思維」在種種演變下逐步融入企業文化與商業模式中，應用範圍也越加擴大，尤其面對諸如客戶體驗、情感聯繫等抽象問題時，往往能產生明顯效益。相較「精實創業」，「設計思維」顯得更為柔軟、開放，由同理心出發，帶點直覺，要企業家們再善解人意一些，透過訪談和觀察，站在不同角度仔細聆聽目標顧客的故事，進而尋求創新解決方法，真正地創建一個以客戶為中心的企業。新創企業藉由感性的「設計思維」挖掘目標顧客的潛在慾望，試著體會他們在消費時的真實情境，在此基礎上形成以客為本的創新想法後，快速敏捷地重複「製造－檢驗－學習」循環，盡快把「最小可行性產品」送至目標顧客手上，實際驗證商業假設，並從「失敗」中持續學習、快速成長。</p><p><img src='assets/螢幕快照 2018-12-03 上午5.46.59.png' alt='螢幕快照 2018-12-03 上午5.46.59' referrerPolicy='no-referrer' /></p><ul><li><p>軸轉（Pivot）是一種商業戰略假設的改變，什麼時候需要改變方向？通常新創很難面對軸轉，因此作者建議最好有定期的堅持/軸轉討論會。以下簡單列出幾個作者提出軸轉的變形。</p><ul><li>推進軸轉（Zoom in pivot），舊產品其中一項功能會被選出來做成新產品。</li><li>拉遠軸轉（Zoom out pivot），舊產品的整個核心功能變成新產品的一項功能。</li><li>顧客需求軸轉（Customer need pivot），原本提供的價值可能顧客不是很需要，但因為了解顧客，所以反而發現他們的其他需求。</li><li>平台軸轉（Platform pivot） ，從應用軟體轉型為平台，或從平台轉型為應用軟體。</li><li>企業架構軸轉（Business Architecture Pivot），利潤與貨量間的調整與轉型。</li><li>其他的還有價值擷取軸轉（Value Capture Pivot）、成長引擎軸轉（Engine of Growth pivot）、通路軸轉（Channel Pivot）、科技軸轉（Technology pivot）等。</li></ul></li></ul><p>&nbsp;</p><h4><a name='header-n158' class='md-header-anchor '></a>2. 發現導向式規劃</h4><ul><li><p>若想在拉丁美洲、亞洲或非洲等地創業，但缺乏那些環境的可靠資料，就必須集結最好的模式與機制，隨時記下他們的各種假設。但最重要的是，必須根據一連串的檢查點，有系統地測試初步模式的每項假設，並做好隨時應變的準備，透過所謂的「發現導向式規劃（根據新發現來應變規畫）」（discovery-driven planning），以調整做法。如此一來，就能根據新出現的證據採取行動，而不是固執與盲目地追求不可行的目標（見麗塔．岡瑟．麥奎斯〔Rita Gunther McGrath〕和麥克米蘭合寫的〈應變式規畫〉）。</p></li><li><p>五大準則：</p><ul><li>準則1：界定事業的約略範圍（具體列出取消創業的條件、界定可接受的門檻、徹底檢視事業所處的經濟、國家、文化環境後，規畫事業的行動規範，這可能包括「不做賒賬銷售」、「不違反母國或地主國的法律」、「絕不行賄」等原則。）</li><li>準則2：注意社會政治面
+在你開始前，必須仔細檢視重要的利害關係人、他們的角色，以及他們可提供的資源。找出受益者（可從事業獲利，但一開始可能存疑而不太願意支持的人）、潛在盟友（最有可能支持專案的人）、中立者（不太可能關心專案，但他們的支持可能是關鍵）、有意義的反對者（會因為專案成功而受害，有手段可阻礙專案進行的人）。有了這樣的分析，你就會知道如何動員支持者，並平息反對者。</li><li>準則3：強調應變式規畫（時間軸、可能面臨的挑戰）</li><li>準則4：規畫退出計畫</li><li>準則5：預期無心造成的結果</li></ul></li></ul><p>&nbsp;</p><h4><a name='header-n176' class='md-header-anchor '></a>3. 商業模式九宮格</h4><ol start='' ><li>目標客層：一個企業或組織所要服務的顧客群。 誰是我們最重要的顧客？ 我們為誰創造價值？ </li><li>價值主張：可以為特定的目標客層，創造出價值的整套產品與服務。 我們給消費者的價值是什麼？ 我們能幫助顧客解決什麼問題？ 我們提供給每個目標客層的，是什麼樣的產品與服務？</li><li>通路：一家公司利用溝通、配送、銷售等通路，與顧客建立起來往的介面，目的是傳達公司的價值主張。 目標客層希望我們透過哪些通路與他們接觸？ 我們的通路如何整合？該如何配合顧客的例行狀況，整合這些通路？ </li><li>顧客關係：一家公司與特定的目標客層，所建立起來的關係型態。 哪些關係是我們已經建立的？要花多少成本？ 這些關係要如何融入我們的商業模式？ </li><li>收益流：成功地將價值主張提供給客戶後，從每個客層所產生的現金（收益扣除成本，所得到的利潤）。如果顧客是商業模式的心臟，收益流就是動脈。必須自問： 他們現在付錢購買的是什麼？現在如何付費？比較希望如何付費？ </li><li>關鍵資源：不同型態的商業模式，所需關鍵資源也不同，它可以是實體資源、財務資源、智慧資源或人力資源。 我們的價值主張、配銷通路、顧客關係、收益流，需要什麼樣的關鍵資源？ </li><li>關鍵活動：必須要有關鍵活動，一個企業才能創造並提出價值主張、進入市場、維繫顧客關係，賺取收益。 </li><li>關鍵合作夥伴：要讓一項商業模式運作，所需要的供應商及合作夥伴網絡。 我們的關鍵夥伴∕供應商是誰？ 哪些關鍵資源是從合作夥伴處取得的？哪些關鍵活動是由合作夥伴執行的？ </li><li>成本結構：運作商業模式會產生的所有成本。 我們的商業模式中，最重要的既定成本是什麼？ 哪個關鍵資源最昂貴？哪個關鍵活動最燒錢？</li></ol><p>&nbsp;</p><h4><a name='header-n197' class='md-header-anchor '></a>4. 價值主張</h4><p><img src='assets/value-prop-infographic.jpg' alt='value-prop-infographic' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n201' class='md-header-anchor '></a>20181112#4: Planning Social Ventures II</h2><h3><a name='header-n202' class='md-header-anchor '></a>[Preview materials]</h3><p><strong>→ Triple Bottom Line</strong>:</p><ul><li><a href='https://www.investopedia.com/terms/t/triple-bottom-line.asp'>What is the TBL?</a></li></ul><p><strong>→ Design Thinking:</strong></p><ul><li><a href='https://en.wikipedia.org/wiki/Design_thinking'>Design Thinking - Wiki</a></li><li><a href='https://www.mckinsey.com/business-functions/mckinsey-design/our-insights/more-than-a-feeling-ten-design-practices-to-deliver-business-value?cid=other-eml-alt-mip-mck-oth-1712'>More than a feeling: Ten design practices to deliver business value</a>**</li><li><a href='https://www.fastcompany.com/90158283/want-to-design-great-digital-experiences-start-working-with-architects'>Want To Design Great Digital Experiences? Start Working With Architects</a></li></ul><p><strong>→ Roles in startups:</strong></p><ul><li><a href='https://fi.co/insight/where-do-you-fit-in-a-founder-s-guide-to-startup-roles'>Startup roles: Where do you fit in?</a></li><li><a href='https://brainhub.eu/blog/5-crucial-roles-in-every-tech-startup/'>5 crucial roles in every Startup</a>*</li><li><a href='https://www.entrepreneur.com/article/238883'>The 4 roles every Startup should have</a>**</li><li><a href='https://www.entrepreneur.com/article/273456'>The 5 people you need for your Startup</a></li></ul><p>&nbsp;</p><h3><a name='header-n226' class='md-header-anchor '></a>[Suggestion readings]</h3><ul><li><p><a href='https://read01.com/aAEa38D.html#.W-fmCOgzZPZ'>三重底線：一個企業社會責任的分析框架</a>*</p></li><li><p><a href='http://www.ibrc.indiana.edu/ibr/2011/spring/article2.html'>The Triple Bottom Line: What Is It and How Does It Work?</a></p></li><li><p><a href='https://medium.com/@Nathan_Lee/%E6%89%93%E9%80%A0%E4%BA%BA%E5%80%91%E9%9C%80%E8%A6%81%E7%9A%84%E7%94%A2%E5%93%81-%E4%B8%80-design-thinking-ac4d0d07328f'>打造人們需要的產品(一) －Design Thinking</a>*</p></li><li><p><a href='https://goo.gl/LUbQfz?fbclid=IwAR3ScnRyc9DgX6x4WXKCQ0YYLTkPO8t8gT_aNyedUzyGqmtfmQ0cpXdKIeY'>Rookie&#39;s Guide 設計思考新手手冊：https://goo.gl/LUbQfz</a> ***</p></li><li><p><a href='https://www.designbetter.co/design-thinking/'>Design thinking handbook from DesignBetterCo.</a> ***</p></li><li><p>DT-Interaction design.org: </p><ul><li><a href='https://www.interaction-design.org/literature/topics/design-thinking'>What is Design thinking?</a> *</li><li><a href='https://www.interaction-design.org/literature/article/5-stages-in-the-design-thinking-process'>5 Stages in the Design Thinking Process</a> *</li></ul></li><li><p><a href='https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action'>Simon Sinek - Golden circle</a> ***</p></li></ul><p>&nbsp;</p><h3><a name='header-n248' class='md-header-anchor '></a>[Notes]＊＊</h3><h4><a name='header-n249' class='md-header-anchor '></a>1. 三重底線</h4><p><img src='assets/3edc994eb1ed08091dd088b51a66d526_hd.jpg' alt='3edc994eb1ed08091dd088b51a66d526_hd' referrerPolicy='no-referrer' /></p><ul><li><p>The triple bottom line (TBL) is a concept which broadens a business&#39; focus on the financial bottom line to include social and environmental considerations. A triple bottom line measures a company&#39;s degree of <a href='https://www.investopedia.com/terms/s/socialresponsibility.asp'>social responsibility</a>, its <a href='https://www.investopedia.com/terms/e/economic-value.asp'>economic value</a> and its environmental impact. TBL is the idea that it is possible to run an organization in a way that not only earns financial profits but also betters people’s lives and helps the planet.</p></li><li><p>3P = Profit (Economic/經濟/企業營利), People (Society/社會/社會責任), Planet (Environment/環境/環境衝擊)</p></li><li><p>三重底線：一個企業社會責任的分析框架，同時從經濟、環保、社會三方面衡量企業的標準。</p><p>1997年,由國際永續發展權威－英國學者<a href='http://wiki.mbalib.com/w/index.php?title=%E7%BA%A6%E7%BF%B0%C2%B7%E5%9F%83%E5%B0%94%E9%87%91%E9%A1%BF&action=edit'>約翰埃爾金頓</a>（John Elkington）率先提出「三重底線」的概念。企業不應不只想著如何將利益最大化，而是始終堅持三重底線原則，或稱作三重盈餘，即企業盈利、社會責任、環境責任三者的統一。若企業只追求盈利，忽略社會和環境責任，企業就有可能走向消費者和全社會的對立面，導致企業無法永續發展，面臨經營風險的重大危機。強調企業的「環境責任」，是因為我們深深體會到環境的脆弱性和對人類的重要性。沒有良好的環境，任何產品的消費都是低質低效的；沒有對資源的節約和迴圈使用，別說是企業，人類的進步也難以為繼。</p></li><li><p>名詞釋義：</p><ul><li>「bottom line」就是指公司的淨利潤。哪為何是「bottom line」？這跟淨利潤這一欄的數字於公司收支表的位置有關∶淨利潤這一欄通常是收支表最後的一行，即公司減除所有開支後的淨收入；而公司的收入一欄通常是收支表的第一行（「top line」）。公司增加其收入（generate top-line growth）或降低其成本（cutting costs）都可以說公司正在改善其淨利潤（improving its bottom line）。</li><li>事實上，把這三個領域中任何一個領域的績效降低到單一數量是不可能的。即使在最常用的「底線」（即凈收入或利潤）一詞的情況下，也沒有人會僅僅根據一些數字對公司進行實際評估。相反，在評估組織的財務績效時，還需要考慮其流動性、償付能力、風險和收益等諸多因素。總之，會幾個不同的財務底線。通過TBL的方法（一些是定量的，一些是定性的）來反映企業績效，以便在經濟、環境和社會方面提供一個企業社會責任對世界產生積極影響的完善圖景。</li></ul></li><li><p>爭議：如何衡量社會和環境的績效？SROI？</p><ul><li>企業為追求永續發展，必須在這三方面取得平衡。這也是最近熱門的CSR之前身。但除了第一個Profit，其他兩個People和Planet很難衡量，因此也成為爭議點之一。例如面對濕地保護和瀕臨動物保育，我們可以試著賦予其貨幣價值，但我們如何評估一隻北極熊的價錢？一塊濕地的價錢呢？。很明顯的，沒有明確的標準來判斷這些議題的貨幣價值，因此也無法將People&amp;Planet與Profit對應。</li><li>有人建議用指數，這樣就是相對的概念了。可以將企業跟產業基數做比較。但明顯的，也沒有標準建議3P以及各個P底下的子P(sub Ps)的權重。有人建議將每個子P獨立出來，分別都建立為一個公制(metric)。例如「濕地創造率」、「北極熊復育率」...。但明顯的，有人馬上懷疑這樣的公製建立必定沒完沒了，缺乏效率。</li><li>即使企業聲稱自己貫徹TBL，但也有可能是在漂綠（greenwash）。幾乎大企業都稱自己是綠色且環境友善的，但仍有聲音認為事實不全然是這樣。當我們獲得一組企業的數據後，例如：企業有30%高階主管是女性，並捐了1.2%的利潤給慈善機構。我們沒有產業的標準可以比較，我們不知道這些數字到底是「好」還是「不好」。我們也不知道這些企業的底線在哪裡，我們只知道他們的表現，事實上，我們永遠無法得知他們的「底線」到底在哪，如何計算出來。</li><li>即使有數據，我們也無法像財務報表般加減乘除與比較。例如某企業捐100萬給濕地保育，另企業100萬給偏鄉兒童，還有企業100萬給同志平權團體，到底哪個數字比較優，哪個數字比較劣？即使爭議頗多，但TBL仍可指引企業落實CSR責任，儘管我們不清楚他們貫徹的程度為何。</li></ul></li><li><p>細節：</p><ul><li><p>Economic Measures - income/expenditures, taxes, business climate factors, employment, business diversity factors.</p><p>經濟指標——收入、支出，稅費，經濟環境要素，就業，經濟多樣性要素。</p><p>Environmental measures - air and water quality, energy consumption, natural resources, solid and toxic waste, and land use/land cover</p><p>環境指標——空氣和水的質量，能耗，自然資源，固體和有毒廢物，用地/土地覆蓋</p><p>Social measures - education, equity and access to social resources, health and well-being, quality of life, and social capital</p><p>社會指標——教育，平等，社會資源可獲得渠道，健康和幸福，生活品質，社會資源</p></li></ul></li></ul><h4><a name='header-n288' class='md-header-anchor '></a>2. 設計思考</h4><p>/非讀不可/</p><ul><li><a href='https://goo.gl/LUbQfz?fbclid=IwAR3ScnRyc9DgX6x4WXKCQ0YYLTkPO8t8gT_aNyedUzyGqmtfmQ0cpXdKIeY'>Rookie&#39;s Guide 設計思考新手手冊</a> ***</li><li><a href='https://www.designbetter.co/design-thinking/'>Design thinking handbook from DesignBetterCo.</a> ***</li></ul><p>/延伸閱讀/</p><ul><li>Understand IBM Design Thinking in 10 minutes: <a href='https://lnkd.in/fdJTS5K' target='_blank' class='url'>https://lnkd.in/fdJTS5K</a></li><li>Gerd Waloszek, Introduction to Design Thinking, 2012: <a href='https://lnkd.in/f5CZhv2' target='_blank' class='url'>https://lnkd.in/f5CZhv2</a></li><li>Linda Nairman, Design Thinking as a Strategy for Innovation: <a href='https://lnkd.in/fixn9Mc' target='_blank' class='url'>https://lnkd.in/fixn9Mc</a></li><li>Herbert Simon, Sciences of the Artificial (3rd Edition), 1996: <a href='https://lnkd.in/fwzFraa' target='_blank' class='url'>https://lnkd.in/fwzFraa</a></li></ul><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n307' class='md-header-anchor '></a>20181119#5: Communicating Social Ventures I</h2><h3><a name='header-n308' class='md-header-anchor '></a>[Preview materials]</h3><p><strong>→ Customer Discovry:</strong></p><ul><li><a href='https://youtu.be/a-J_SwmMJyo'>Get out of the building (by S. Blank)</a></li><li><a href='https://chrislema.com/wrong-ways-get-out-of-the-building/'>There is a wrong way to get out of the building (by C. Lema)</a></li><li><a href='https://gorillalogic.com/blog/how-to-write-agile-user-stories/'>How to write Agile User Stories?</a></li><li><a href='http://www.romanpichler.com/blog/personas-epics-user-stories/'>From Personas to User Stories</a>***</li><li><a href='https://www.romanpichler.com/blog/10-tips-writing-good-user-stories/'>10 Tips to write User Stories</a>***</li></ul><p><strong>→ Gamification:</strong></p><ul><li><a href='https://youtu.be/-N-jMSymzBM'>Gamification: What is it?</a>***</li><li><a href='https://youtu.be/vInCVUIiq6g'>Gamification Guide: in the workplace</a>*</li><li><a href='https://www.ted.com/talks/jane_mcgonigal_gaming_can_make_a_better_world?language=en'>Gaming can make a better world (by J. McGonagal)</a></li><li><a href='https://youtu.be/2lXh2n0aPyw'>Case: The Fun Theory - Piano Stairs</a></li></ul><p>&nbsp;</p><h3><a name='header-n332' class='md-header-anchor '></a>[Suggestion readings]</h3><ul><li><a href='https://designtongue.me/persona-for-project/'>設計大舌頭：如何打造對專案有效益的人物誌 ？</a>***</li><li><a href='https://designtongue.me/%E9%AB%94%E9%A9%97%E5%9C%B0%E5%9C%96-%E4%BD%BF%E7%94%A8%E8%80%85%E9%AB%94%E9%A9%97%E6%97%85%E7%A8%8B/'>設計大舌頭：體驗地圖與使用者體驗旅程</a></li><li><a href='https://medium.com/@Nathan_Lee/%E6%89%93%E9%80%A0%E4%BA%BA%E5%80%91%E9%9C%80%E8%A6%81%E7%9A%84%E7%94%A2%E5%93%81-%E4%BA%8C-%E4%BA%BA%E7%89%A9%E8%AA%8Cpersona-2c309225a69b'>打造人們需要的產品(二)－人物誌Persona</a>*</li><li><a href='https://vide.tw/2414'>遊戲化 Gamification 入門篇</a>*</li><li><a href='https://tw.alphacamp.co/blog/2015-09-21-gamification-framework-octalysis-1'>解析產品令人上癮的秘訣——遊戲化理論架構 Ocatalysis 介紹（上）</a>***</li><li><a href='https://yukaichou.com/gamification-examples/octalysis-complete-gamification-framework/?fbclid=IwAR0lC-z9BANebEVbVBqQZykLCgFqTpPgRbVTrRHcCYKAt_PcTmfI3sRgpJ8#.Vft6DiCqqko'>原文完整版：Octalysis – the complete Gamification framework</a></li><li><a href='https://medium.com/@corik826/%E9%81%8A%E6%88%B2%E5%8C%96%E5%AF%A6%E6%88%B0%E5%85%A8%E6%9B%B8-%E5%85%AB%E8%A7%92%E5%8C%96%E6%9E%B6%E6%A7%8B%E7%90%86%E8%AB%96%E6%89%93%E9%80%A0%E8%AE%93%E4%BA%BA%E4%B8%8A%E7%99%AE%E7%9A%84%E7%94%A2%E5%93%81%E6%9C%8D%E5%8B%99-1790922e559e'>《遊戲化實戰全書》八角化理論打造讓人上癮的產品服務【閱讀筆記】</a>*</li></ul><p>&nbsp;</p><h3><a name='header-n350' class='md-header-anchor '></a>[Notes]＊</h3><h4><a name='header-n351' class='md-header-anchor '></a>1. 人物誌</h4><p><strong>人物誌是什麼？</strong></p><p>人物誌是一種由研究結果轉畫出來的虛擬人物，常用來幫助我們瞭解不同類型的使用者之間在使用產品，生活態度與行為模式上的差異，近進而開發出更精準對應不同類型使用者的產品或服務，一位人物誌就代表「一群具有相似行為模式及目標的使用者」。要注意的是，人物誌與一般行銷所說的目標族群與市場區隔是截然不同的兩種內涵，行銷上的市場區隔往往是以年齡、性別、職業或收入來區隔（demography），
+而人物誌則是以「行為、相似性」進行分類，幫助我們專注在客觀的行為需求，規劃符合真正人們需要而非我們自己認為很好的服務與產品。 </p><p>Personas offer a great way to capture the users and the customers with their needs. They are fictional characters that have a name and picture; relevant characteristics such as a role, activities, behaviours, and attitudes; and a goal, which is the problem that has to be addressed or the benefit that should be provided.</p><p><strong>面對人物誌，你該注意的是...</strong></p><ul><li>人物誌的年齡、收入、職業或家庭背景都只是為了幫助我們沈浸故事，不具有意義</li><li>請專注在行為、目標與價值觀的描述，而非糾結於枝微末節的故事情節上</li><li>人物誌可在開發中的任何階段利用人物誌，檢視服務與產品是否偏離既定目標</li></ul><p>&nbsp;</p><h4><a name='header-n364' class='md-header-anchor '></a>2. 使用者故事</h4><ul><li>User stories are a powerful technique to capture the product functionality from the perspective of a user or customer. User stories want to tell a story about the users using the product. </li></ul><p>使用者故事（User Story） 是敏捷社群用來描述需求的practice。 它非常容易上手， 但是也容易犯下錯誤， 以下便是常見的問題：</p><p><strong>（1）都是使用者</strong></p><p>User story 有個範本： As a <role>， I want to <action> because of <business value>. 大家可以根據這個來撰寫使用者故事。可是很多人在寫的時候都會變成這個樣子：身為一個「使用者」，我想要「可以根據關鍵字查詢書籍」，因為「大多數時候我只記得一些關鍵字，這樣對我比較方便」</p><p>也就是說，大家都不區分你的使用者是誰，都把它泛稱使用者。可是這會讓你損失很多了解系統的機會。因為不同角色的人會有不同的考量和需求，並且也會有不同的優先順序，混為一談，只是讓你迷失在一大包功能列表中，而無法掌握重點一刀斃命。</p><p> <strong>（2）不是從客戶角度出發</strong>
+本來應該要從不同角色的角度出來，來思考他想要的需求是什麼？可是總是會有些是技術債，或者是product owner自己想要的東西。這些東西不是不能寫，而是要寫的時候，還是要站在客戶的角度，想想客戶會希望你這個東西做成什麼樣子。例如，有些debug log 資訊不完整的技術債，開發人員一開始可能會寫成：「身為開發人員，我要能產生一些debug logs，這樣好讓我再出錯時可以方便除錯。」如果你若是能再進一步從使用這個機制的客戶來思考，他可能要的會是像這樣：「身為開發人員，我要能產生一些可以分層且方便下載的debug logs，這樣好讓我再出錯時可以方便除錯，並且不用看太多訊息，或是收集太大的debug log。」</p><p>因為有時候產生debug log不是問題，問題是產生太多，短短時間內就產生了幾G大小的檔案，在某些環境下，你要使用者如何把這玩意下載交付到你手上。所以你如果能換位思考，同一個功能，你做出來會更貼心。</p><p> <strong>（3）沒有商業價值</strong>
+另外一個問題，就是沒有撰寫商業價值的部分。當我們沒有這部分的資訊，我們就無法判斷他到底有多急，或者是在該做到多少才足夠。例如：身為系統管理人員，我需要產生日報表。如果只是這樣就呆呆地去實踐日報表的功能，通常出來的都不會是客戶要的。你需要知道這報表出來是要給誰看的，是要那它來做什麼，大多時候我們都是一廂情願的給很多資料，可是你有想過上百頁的報表他會看嗎？或者是有時候客戶也不見得確定他想看什麼資料，或是想交付什麼資料給老闆看，這時候一份固定格式的報表，對他來說效益不大。所以我們需要有商業價值的部分，並且那只是起始點，我們還需要根據這個起始點，來和客戶好好溝通，他們內心真的在想什麼。</p><p> <strong>（4）沒有驗收條件</strong>
+寫過使用者故事的都知道，user story只是很簡單的一兩句話，他希望的就是你要去跟利害關係人討論，要去了解他們著遇到什麼問題，要這個功能的動機是什麼。此外還有一件重要的事情，就是要列出驗收條件，也就是定出要做的功能的範圍，如果沒有這個框框，在大家認知不同的狀況下，便會有不同的產出。</p><p> 例如：身為一個「使用者」，我想要「可以根據關鍵字查詢書籍」，因為「大多數時候我只記得一些關鍵字，這樣對我比較方便。」</p><p>是只針對書籍名稱找尋，還是對作者或是書籍簡介也搜尋？此外找出的書目，是根據出版時間，還是根據書籍名稱的字母順序排列？雖然這些功能不見得難做，可是一開始沒有做對，等到事後才來修改，不僅浪費工程師的時間，也讓使用者覺得很不貼心。為什麼不一開始就把驗收條件確認好呢？</p><p>&nbsp;</p><h4><a name='header-n379' class='md-header-anchor '></a>3. 遊戲化</h4><h5><a name='header-n380' class='md-header-anchor '></a>什麼是遊戲化？</h5><p>遊戲化（Gamification）是 2002 年由英國工程師 Nick Pelling 提出，我們看一下<a href='https://journals.tdl.org/absel/index.php/absel/article/viewFile/2137/2106'>這篇文章</a>：</p><ol start='' ><li>Gamification is the use of game design elements in non-game contexts
+遊戲化是將遊戲的元素放到非遊戲的內容之中</li><li>Gamification is the process of game-thinking and game mechanics to engage users and solve problems
+遊戲化是利用遊戲的思考與遊戲的機制讓使用者更容易解決問題</li></ol><ul><li>簡單來說，「遊戲化」是一種以「人性為中心的設計」（Human-Focused Design），根據人們為什麼做或不做某件事，找到能夠強化人們的感覺、動機和投入程度的誘因去做設計；反之，以功能為中心的設計（Function-Focused Design），則關注在如何提升產品效能、工作效率等，像是自動化或流線化系統，讓整個供應鏈可以更快速的運行。常見的累積點數、蒐集印章、成為「專家」，其實都是「遊戲化」的一種。不過行銷活動遊戲化也不是將積分遊戲（points）、獎勵制度（rewards）、計分板（leader board）等這些元素置入這麼簡單，最重要的是遊戲化的內容可以讓你的主要目標客群買帳，那麼才可稱作是一個成功的行銷遊戲化活動。</li></ul><h5><a name='header-n390' class='md-header-anchor '></a><strong>周郁凱遊戲化的八角理論</strong></h5><ol start='' ><li><p>重大使命與呼召（Epic meaning &amp; calling）：意義是會讓人想要付出自己的時間與技能非常重要的一個因素，舉個例子，<a href='http://www.teach4taiwan.org/'>Teach for Taiwan的劉安婷</a>，她是一位放棄美國高薪回台灣推動偏鄉教育的夢想家，為了偏鄉的教育。Teach for Taiwan的偏鄉師資計畫每一位老師需要到偏鄉進行為期2年的教學。大家可能覺得奇怪，現在不是很多流浪教師嗎？為什麼偏鄉還是沒有老師？因為大多數的人還是會想要留在大城市，所以還是需要這樣有理想的組織，去補足偏鄉教育這個區塊。</p><ul><li>當一個玩家認為他在做一件很偉大的事情，或他被「選中」做某些事情。典型會出現的情形是，玩家投入很多時間在維持論壇或幫助整個社群的運作，像是維基百科、PTT、Reddit。而當玩家有著「新手玩家的好運」（Beginner’s Luck）時，也會啟動這個機制，人們相信比起其他的玩家，他更有天賦，或是相信他們很幸運就在遊戲的一開始抓到訣竅，是命中註定要來破關的玩家。</li></ul></li><li><p>進度與成就（ Development &amp; Accomplishment）：點數、徽章與排行榜，這在大部份的網路遊戲，或是實體店家都會嘗試使用的方式，也因為大家被商人行銷的手段教育的很好，也習慣了這樣的方式，就看你有沒有想要參與這樣的集點。</p><ul><li>這是人們想要更進步、精進技能以及達成挑戰的內在驅力。在這個驅力的狀態下，「挑戰」的設計非常重要，如果挑戰沒有獲得相對應的獎勵就毫無意義。這也是最容易設計和執行的核心驅力，也是大部份PBL系統：積分（points）、徽章（badge）、排行榜（leader board）著重之處。</li></ul></li><li><p>賦予創造力與回饋（Empowerment of Creativity &amp; Feedback）：提供一個園地可以讓玩家展現創意，例如小時候在玩超級瑪莉的時候，可以得到一個無敵星星，就可以全力衝刺把所有敵人都殺光。</p></li><li><p>所有權與佔有慾（Ownership &amp; Possession）：從玩家覺得他們擁有一些東西，他們就會自然而然地想要讓他們擁有的這些東西更好（像是裝備的升級），或是去追求更多的東西（獲得更多寶物、打敗更多的敵人、累積更多虛擬貨幣等）。此外，如果玩家花了很多時間在客製化他的人物角色、圖像，他也更容易覺得他「擁有」這個角色。集點換贈品、不同景點的印章蒐集就是利用這個概念。</p></li><li><p>社會影響與關聯（ Social Influence &amp; Relatedness）：所有與人相關的社會元素，包括：師徒關係、認同、友誼、競爭、敵對等。當你看到你的朋友有一個很厲害的技巧，或是擁有某個很特別的東西，你會不由自主地也會想要像他一樣。這個驅力也包括我們必須會想靠近和我們有關的人、地方、或是活動。比方說，行銷業者透過故事的包裝，讓你在看到商品的時候回想起你的小時候，這樣的懷舊的情節可能會增加你的購物慾望，就是利用這個驅力。</p></li><li><p>稀缺性與迫切（Scarcity &amp; Impatience）：當你很想要某個東西但你又不能馬上擁有的時候。很多遊戲都有延遲的機制，像是2個小時後你可以獲得在這場戰役裡面的獎勵－但人們其實很想要「馬上」就得到即時的回饋，可是因為無法獲得立即性的報償，讓他們把這件事情掛在心上。Facebook剛推出的時候就是運用這個概念，只開放給哈佛大學的學生使用，接著才開放給其他長春藤的名校，然後到所有的大學。因此當Facebook不再限制註冊者的身份時，人們便一湧而入地註冊，因為在那之前他們早就磨刀霍霍了！</p></li><li><p>不確定性與好奇心（Unpredictability &amp; Curiosity）：扭蛋就是一種不確定性與好奇心的展示，因為每次投錢之後，掉出來的扭蛋不一定是原先預期的。知名的心理學史金納箱（Skinner Box）實驗，因為出自於不確定性和好奇心，小白鼠沒辦法預測獎賞，所以會更頻繁地按壓槓桿。雖然很多人會錯誤地認為積點、記分板、徽章的獎勵機制是歸類在這個驅力之下。</p></li><li><p>損失與避免（Loss &amp; Avoidance）：與第二個（發展與成就感）相反，玩家參與遊戲是為了避免不好的事情發生，或是避免先前的努力功虧一簣。此外，當人們認為不趕快行動的時候，他們可能會永遠失去行動的機會，也是誘使行動的主要因素。例如：喝水App如果不喝水的話，App裡面的植物就會枯萎，引導人們養成正確的習慣。</p></li></ol><h5><a name='header-n414' class='md-header-anchor '></a>延伸閱讀</h5><ul><li><a href='https://hackmd.io/s/rJUvcQvee'>HackMD 共筆：遊戲化（Gamification）</a></li><li><a href='https://medium.com/yahoo-apac-design/%E9%81%8A%E6%88%B2%E5%8C%96-gamification-%E8%88%87%E7%94%A2%E5%93%81%E8%A8%AD%E8%A8%88%E5%AF%A6%E8%B8%90-b6899b0d9931'>遊戲化 (Gamification) 與產品設計實踐：完整案例分析</a>*</li><li><a href='https://www.youtube.com/watch?v=-jfgxt4AZIc'>Gamification: Wharton Lifelong Learning Tour</a> by Kevin Werbach</li><li><a href='http://www.yukaichou.com/gamification-examples/octalysis-complete-gamification-framework/#.Vjd4I7crKUn'>Octalysis: Complete Gamification Framework</a> by 台灣遊戲化大師周郁凱</li><li><a href='https://www.youtube.com/watch?v=v5Qjuegtiyc'>Gamification to improve our world: Yu-kai Chou at TED x Lausanne</a></li><li><a href='https://transbiz.com.tw/gamification-%E9%81%8A%E6%88%B2%E5%8C%96%E8%A1%8C%E9%8A%B7-octalysis/'>遊戲化(Gamification)行銷怎麼做？8角分析(Octalysis)教你誘客戶上鉤</a>*</li></ul><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n430' class='md-header-anchor '></a>20181126&amp;1203#6: RobinFood Field trip &amp; Hanukkah Vacation</h2><h3><a name='header-n431' class='md-header-anchor '></a>[Suggestion readings]</h3><ul><li><p><a href='https://gamificationnote.blogspot.com/2018/09/add-motivation.html'>遊戲化（GAMIFICATION）筆記 - 補充(二)：動機心理學</a></p></li><li><p><a href='https://hackmd.io/s/H1lqanqLQ'>HackMD共筆：《刻意練習》閱讀筆記</a> ***</p></li><li><p><a href='https://medium.com/@Nathan_Lee/%E6%89%93%E9%80%A0%E4%BA%BA%E5%80%91%E9%9C%80%E8%A6%81%E7%9A%84%E7%94%A2%E5%93%81-%E4%B8%89-jobs-to-be-done-7a461f4c5090'>打造人們需要的產品(三) - Jobs to be done</a></p></li><li><p><a href='https://medium.com/@Nathan_Lee/%E6%89%93%E9%80%A0%E4%BA%BA%E5%80%91%E9%9C%80%E8%A6%81%E7%9A%84%E7%94%A2%E5%93%81-%E5%9B%9B-%E7%94%A2%E5%93%81%E6%A0%B8%E5%BF%83%E5%83%B9%E5%80%BC-ca770be560c1'>打造人們需要的產品(四)  -  產品核心價值</a></p><ul><li>Reference: <a href='https://pivotservices.curated.co/issues/64'>Pivot Product Hits</a>、<a href='https://www.linkedin.com/pulse/understanding-your-core-product-value-mark-castellani-insead-mba-/'>Facebook, Uber, AirBnB — Defining Core Product Value</a>、<a href='http://www.gegugu.com/2016/03/10/2401.html'>Uber的核心競爭力是什麼？</a></li></ul></li><li><p><a href='https://www.weforum.org/agenda/2018/09/sustainable-development-impact-summit-2018-highlights?fbclid=IwAR2hPPw56sRbbi9Dm6scrDTYePP_ybylb-z_EGCXsiVK_nRJh0_C-U6lj_M'>What next? 4 ways to build a sustainable future</a></p></li><li><p><a href='https://www.forentrepreneurs.com/startup-ideation/'>Brainstorming for New Startup Ideas: A Framework to Spur Creative Thinking</a></p></li></ul><p>&nbsp;</p><h3><a name='header-n449' class='md-header-anchor '></a>[Notes]</h3><h4><a name='header-n450' class='md-header-anchor '></a>1. 動機心理學</h4><p>這部分將補充有關人們的「動機分類」以及其背後的相關心理學研究，心理學當中有兩個大門派，分別為「行為心理學」與「認知心理學」。前者藉由直接觀察受試者，專注於研究人們受到特定刺激而做出的特定反應；而後者專注於人們意識的變化與行為背後的心智處理。</p><p><strong>（1）行為心理學</strong>
+本學派<u>將人的意識視為無法科學研究的黑箱</u>，不去探討結果的成因。而是將研究重點放在「刺激→反應→結果」，單純觀察不同刺激所引發的成效。觀察到人們除了單向接受刺激而反應外，也會看到自己的反應而逐漸修正改變結果。</p><p>從此理論我們可以將「觀察、反應回饋循環、強化反應」的概念應用於遊戲化當中。意即在獎勵制度設計上，我們不能期待同一獎勵所造成的結果永遠是一樣的。隨著環境的不同、時間的推移、對象的不同都可能有相異的反應與行為發生。獎勵方式應隨時保持動態調整，以因應人們反應的不斷變化。</p><p>由於行為心理學因為只關心刺激與反應的連結而不探討背後的心理因素。有時候會出現盲點與衝突，進而出現之前我們所提過的反效果。</p><p><strong>（2）認知心理學</strong>
+與行為心理學相反的，認知心理學極力探討人們行為背後的心理因素。我們已經知道當人們接觸到回饋、獎勵刺激，大腦會釋放「多巴胺」。這種令人興奮、開心的內分泌物質便是令人持續的動力，甚至是上癮的原因。不管在電玩遊戲、賭博或是滑手機臉書都能見到這些物質。</p><p>研究顯示，比起固定的獎勵，人們對於不確定性的獎勵有更顯著的多巴胺峰值某種程度也解釋了為什麼人們這麼喜歡扭蛋、手遊的抽獎活動。我們亦能將此套入獎勵制度，增加變化避免人們的反應疲勞。</p><p><strong>心流（mind flow）</strong></p><p>談到人們的心理狀態就不得不提到「心流」（flow）的概念。指人們在全神貫注於高技巧活動時，心無旁騖、高度興奮的心理感受。其概念提出者心理學家 Csikszentmihalyi Mihaly 認為有以下特徵：</p><ul><li>由行為者自主決定從事</li><li>行為者專心一志而不分心</li><li>活動有清楚的目標使行為者前進</li><li>活動有立即的回饋使行為者能立即調整</li><li>對行為者而言挑戰與技能達到平衡且有主控感</li><li>行為者從事行為時憂慮感消逝</li><li>行為者對於時間的消逝感受改變</li></ul><p>雖然並非所有遊戲化的目標都適合或能夠達到心流狀態。對於參與者而言，心流確實是實非具有吸引力的心理狀態。將遊戲化的環境調整與心流特徵相似亦有助於使參與者的心理狀態接近一致。</p><p>&nbsp;</p><h4><a name='header-n476' class='md-header-anchor '></a>2. JTBD理論</h4><p>Jobs to be done（JTBD）理論，由以破壞式創新理論聞明的哈佛大學教授 Clayton Christensen 所提出，「Jobs to be done（需要完成的工作）」也為《創新者的解答》一書中最引發讀者興趣的概念。</p><blockquote><p>「顧客」「雇用」了產品與服務以便執行生活中需要完成的「工作」。</p></blockquote><p>從顧客的角度來思考，了解他們在做什麼，也要了解他們為什麼做這些事。把顧客「工作」視為此顧客必須解決的問題，或必須完成的任務。</p><blockquote><p>People don’t want a quarter inch drill, they want a quarter inch hole. 人們不想要一個四分之一英吋的鑽孔機，而是需要一個四分之一英吋的洞。 — Theodore Levitt</p></blockquote><p>鑽孔機只是達成目的的工具，而目的是四分之一英吋的孔洞；「顧客」：人們、「雇用的產品與服務」：鑽孔機與鑽洞、「顧客必須解決的問題或必須完成的任務」：鑽孔、「目的」：四分之一英吋的孔洞。</p><h5><a name='header-n484' class='md-header-anchor '></a>Jobs to be done重要性</h5><ol start='' ><li><strong>了解顧客想解決的根本問題：</strong>明確了解顧客在各個面向面臨的問題，並明確指出瞄準的「顧客」(Target Audience)、「顧客必須解決的問題或必須完成的任務」。<strong>類似如下的說明：「顧客」需要在「特定情況下」(Job context)去「解決特定問題或完成某項任務」。</strong></li><li><strong>明確知道顧客的目的是什麼：</strong>目的必須夠明確，可以供近一步深入探討。通常「目的」跟顧客如何使用「雇用的產品與服務」有關係。</li><li><strong>了解有哪些限制性的障礙侷限了解決方案：</strong>「目的」所構成條件的反面就是限制障礙，導致部分解決方案被排除在外。例如，四分之一英吋的孔洞，若要一次性鑽到預定的孔洞大小就必須有四分之一英吋的鑽孔機。而其他尺寸的鑽孔機則無法一次性的完成這項任務。</li><li><strong>了解顧客現行的解決方案：</strong>檢視顧客平常可以用來完成工作的不同方法</li><li><strong>為顧客量身創造新的解決方案：</strong>辨識出顧客想要的解決方案與現行的解決方案之間的落差，並提出解決顧客目前尚未能滿意解決問題的取代性解決方案。</li></ol><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n498' class='md-header-anchor '></a>20181210#7: Communicating Social Ventures II</h2><h3><a name='header-n499' class='md-header-anchor '></a>[Preview materials]</h3><p><strong>→ Benchmarking:</strong></p><ul><li><a href='https://youtu.be/R6tJpyaFiQc'>What is benchmarking?</a> ***</li><li><a href='https://drive.google.com/file/d/0B7jj5o_JrCMPZkN5bUFRbEhsOGc/view'>Benchmarking: How to invent service? (by C. Bell)</a></li></ul><p><strong>→ Value creation:</strong></p><ul><li><a href='https://youtu.be/imlkWMwNOkk'>Value Creation and 5 Parts of Every Business</a>***</li><li><a href='https://drive.google.com/file/d/0B7jj5o_JrCMPalN5WlBycFJRLU0/view'>Creating value is key to the future of marketing (by C. Ross)</a></li></ul><p><strong>→ Crowdsourcing:</strong></p><ul><li><a href='https://youtu.be/din2UVvRnGU'>Crowdsourcing (by L. Zoref)</a></li></ul><p><strong>→ Persuasive marketing :</strong></p><ul><li><a href='https://www.entrepreneur.com/article/254661'>3 ways to use the power of persuasion</a> </li><li><a href='https://www.insites-consulting.com/6-principles-of-persuasive-marketing-how-to-influence-people/'>6 principles of persuasive marketing</a>（<a href='https://www.smartm.com.tw/Article/31313339cea3'>中文版</a>）*</li></ul><p>&nbsp;</p><h3><a name='header-n524' class='md-header-anchor '></a>[Suggestion readings]</h3><ul><li><a href='https://wiki.mbalib.com/zh-tw/%E6%A0%87%E6%9D%86%E5%88%86%E6%9E%90%E6%B3%95'>MBA智庫：標竿分析法</a></li><li><a href='https://www.smartm.com.tw/Article/31313339cea3'>深入人心的說服力行銷法，7個策略讓產品不銷自售</a></li></ul><p>&nbsp;</p><h3><a name='header-n531' class='md-header-anchor '></a>[Notes]</h3><h4><a name='header-n532' class='md-header-anchor '></a>1. 標竿分析法</h4><p>標竿/基準化分析法（英語：Benchmarking）又稱標竿測試/管理/學習，是指將自己企業的表現指標與業界最佳指標做比較。常見的指標包括品質、時間、花費等。標竿測試通過找出業界中最佳的幾個公司或產品並與自己比較來了解目標公司的表現，並且試圖解釋他者成功的原因。</p><h5><a name='header-n534' class='md-header-anchor '></a>1.1 前言</h5><p>在我國最早使用標竿學習觀念者，當推論語中，孔子所說的：「見賢思齊焉，見不賢而內自省也。」、「三人行，必有我師焉，擇其善者而從之，其不善者而改之。」</p><p>國際間最早使用「標竿學習（競爭標竿、尺標比較、水平對比）」（Benchmarking）一詞作為管理工具者，當屬美國全錄公司。1982年初，該公司察覺到他們在全美影印機市場佔有的比例，從百分之八十驟降至百分之十三，企業生存出現危機。為拯救危亡，公司推出「品質掛帥」（Leadership through Quality）的策略專案品質計畫；它是由員工參與、學習標竿及品質改進三項重要策略所構成，由於領導者貫徹執行，帶領公司走出困境，終於反敗為勝，並於1989年獲美國國家品質獎的榮銜，而他們所採用「學習標竿」的做法，也成為企業常用的管理工具。</p><h5><a name='header-n537' class='md-header-anchor '></a>1.2 定義</h5><p>標竿學習就其字意言，是尋找學習的對象，以他們既有成就為基準 ，透過合法管道學習，以「見賢思齊」的手段，達到改善自己經營體質之目的。換句話說，它是指一家公司可以就某一特定過程，將本身的績效與其他公司的績效相比較，然後學習其中績效最佳者的做法，以達到提升自己績效的目的。我們亦可從以下的標竿學習（Benchmarking）定義中，得知其意涵：</p><ul><li>Collins 英文字典將Benchmark/ Benchmarking解釋為「 固定對象的標記，諸如用石柱來說明高出海平面之高度，作為調查中的參考點」，有基準之意。</li><li>韋氏（Webster）字典將它解釋為：「標竿為一種調查的指標，做為預定的基本參考點，這個標準可以用測量或評價某些實務。」</li><li>美國生產力與品質中心（APQC）：「標竿學習是一項有系統、持續性的評估過程，透過不斷地將企業過程與世界上居領導地位之企業相比較，以獲得協助改進經營績效之資訊。」</li><li>美國全錄公司：「持續有系統地評估頂尖企業的一種過程，以確認最好的業務運作方式，並據以設定合理的自我表現目標。」</li><li>美國教育部：「持續地衡量其產品、服務及運作方式，並與最佳競爭者或產業界的領導者相比較。」</li></ul><p>由此可知，標竿學習是一種向企業實務楷模學習的過程，它可以向同業學習，也可以向異業學習，這種學習過程要靠人來推動，惟有人人參與，標竿學習的策略才能成功。綜上所述，我們可將標竿學習歸納為下列幾個重點：</p><ul><li>是一種廣受歡迎能促進進步的管理工具。</li><li>重視過程與實務。</li><li>可以辨識出最需改變的過程。</li><li>重在全員參與。</li><li>可比較自己公司的過程或績效與一流公司的過程或績效。</li><li>目標是找出成功的秘訣，然後應用在自己公司。</li></ul><h5><a name='header-n564' class='md-header-anchor '></a>1.3 類型</h5><p>標竿學習是以「知己」的方式，來檢驗自己，也以「知彼」的方式，來瞭解競爭對手，從而得知，自己到底與競爭對手的差距有多少。一般來說，標竿學習因對象和範圍的不同可分成四類：</p><ol start='' ><li>內部標竿（Internal Benchmarking）：係指企業內各部門、工廠、分公司、間之某一類似作業過程或工作方法，彼此相互觀摩學習，找出組織內不同部門間的績效差異，進行改善。</li><li>競爭標竿（Competitive Benchmarking）：係指向競爭對手學習，將其營運有關的重要項目，與競爭對手進行標竿研究比較，比較的項目包括：產品之品質、價格、生產/服務過程、績效等，擇優學習。</li><li>機能標竿（Functional benchmarking）：它係針對某一機能或過程之改善目的而設。先定出某些企業機能領域，諸如：生產、行銷、財務、服務…等的績效衡量標準，而後尋求在此特定領域內表現卓越的其他組織，將它與企業本身比較，分析其作業過程之優點與績效差距，達到改善績效的目的。</li><li>一般的標竿（Generic Benchmarking）：係指將創新的學習方法，運用到過程或策略的改善，它代表的意涵是專注於學習卓越的作業過程，不論其存在之行業或產業別。例如全錄公司向AT&amp;T學習R/D，向美國快遞學習收款，向密立根公司學習員工提案制度等等。參考最佳者的作業系統，建立自己的功能目標，整合策略，使自己成為最佳者。</li></ol><h5><a name='header-n575' class='md-header-anchor '></a>1.4 重要觀念</h5><p>欲期有效運用標竿學習作為管理工具，須先建立四項重要觀念，即：「全面品質觀」、「過程觀」、「衡量標準觀」與「學習觀」，茲略述如次：</p><ul><li>全面品質觀：係指標竿學習的基本理念之一，在於達成顧客的全面滿意；</li><li>過程觀：係指標竿學習所涵蓋學習對象的作業過程，以及組織內部的運作流程與計劃流程；</li><li>衡量標準觀：係指標竿學習須訂出某些組織功能上共同績效衡量標準，作為比較之依據；</li><li>學習觀：係同時強調向他人學習與自我學習的精神。</li></ul><p>我們須將以上四種觀念作為實施標竿學習的基本原則，不可僅將標竿學習簡化為向他人學習的方式而已。我們也要瞭解，應將標竿學習視為持續的學習過程，不斷地進行創新與改善來提升組織效能，以增強競爭優勢。</p><p>&nbsp;</p><h4><a name='header-n588' class='md-header-anchor '></a>2. 生意五部分</h4><p><img src='assets/5part Biz.png' alt='5part Biz' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><h4><a name='header-n591' class='md-header-anchor '></a>3. 三種產品廣告</h4><ul><li>產品廣告（product advertising）：所要推廣的是廣告主的產品或服務。依廣告目的，可再區分告知式、說服式、與提醒式三種產品廣告：</li></ul><p>（1）告知式廣告（informative advertising）：用於要推廣全新或經過改良的產品，增加消費者對產品的知曉與瞭解程度。許多訴求「最新配方」、「獨家技術」、「全球首發」的廣告，都屬於告知式廣告。</p><p>（2）說服式廣告（persuasive advertising）：為了加強品牌偏好、促進品牌轉換，刺激消費者欲望與購買等，會強調品牌或產品的特色與優點，多使用在產品成長期與成熟期。某些說服式廣告會以間接或直接指出自己比競爭品牌優秀，而成為比較式廣告（comparison advertising）。</p><p>（3）提醒式廣告（reminder advertising）：當品牌已經被多數目標消費者接受與肯定，並產生品牌忠誠度時，廣告的目的轉變為提醒消費者，避免消費者對其品牌印象有所模糊或淡忘。這類廣告常出現在產品成熟期、甚至是衰退期。</p><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n600' class='md-header-anchor '></a>20181218#8: Facing dilemmas/ failure of Social Ventures</h2><h3><a name='header-n601' class='md-header-anchor '></a>[Preview materials]</h3><p><strong>→ Failure reasons &amp;lessons:</strong></p><ul><li><a href='https://www.entrepreneur.com/article/307724'>20 Reasons startup fail</a>*</li><li><a href='https://hbr.org/2013/02/lessons-from-a-failed-social-e'>Lessons from a failed entrepreneur</a>*</li><li><a href='https://www.theguardian.com/small-business-network/2018/mar/12/social-enterprises-go-bust-all-the-time-how-the-sector-is-tackling-its-image-problem'>Social enterprises go bust all the time</a>*</li><li><a href='https://www.failory.com/blog/startup-failure-rate'>The Ultimate Startup Failure Rate</a></li><li><a href='https://www.netimpact.org/blog/are-social-impact-start-ups-set-up-to-fail'>Why social impact startups are set to fail?</a></li><li><a href='https://www.bizjournals.com/sanjose/blog/2012/09/most-startups-fail-says-harvard.html?page=all'>75% of startups fail, but it&#39;s no biggie</a></li></ul><p><strong>→ Pivot &amp;bouncing back:</strong></p><ul><li><a href='https://www.entrepreneur.com/article/225204'>How 5 entrepreneurs bouncing back after failure</a></li><li><a href='https://youtu.be/bZXDGQSuF9I'>7 Step Problem Solving (by E. Muzio)</a></li><li><a href='https://youtu.be/1hTI4z2ijc4'>Pivot = A change in &quot;strategy&quot; without a change in &quot;vision.&quot; (by E.Ries)</a> *</li><li><a href='https://youtu.be/Pl8c5ooHfWs'>5 keys to success for social entrepreneurs (by L. Pareras)</a></li><li><a href='http://neeley.tcu.edu/uploadedFiles/Academic_Departments/Management/Failed_not_finished.pdf'>A narrative approach to understanding venture failure stigmatization</a></li><li><a href='https://www.entrepreneur.com/article/235168'>Three rules for making a successful pivot</a></li></ul><p>&nbsp;</p><h3><a name='header-n631' class='md-header-anchor '></a>[Suggestion readings]</h3><ul><li><a href='https://www.entrepreneur.com/slideshow/227215'>The Art of the Pivot</a></li><li><a href='https://www.entrepreneur.com/article/230754'>Do Pivots Matter? Yes, in Almost Every Case</a></li><li><a href='https://www.entrepreneur.com/article/220302'>Pivot or Persevere? The Key to Startup Success</a></li><li><a href='https://www.thenewslens.com/article/23818'>能撐過前五年的新創公司只有1%—談創業家的七種死法</a></li></ul><p>&nbsp;</p><h3><a name='header-n642' class='md-header-anchor '></a>[Notes]</h3><h4><a name='header-n643' class='md-header-anchor '></a>資訊圖表：新創生存率</h4><p><img src='assets/5975623857047a04aaa272fb_Startup Survival Rates Infographic.jpg' alt='5975623857047a04aaa272fb_Startup Survival Rates Infographic' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n647' class='md-header-anchor '></a>20181224#9: Funding Social Ventures</h2><h3><a name='header-n648' class='md-header-anchor '></a>[Preview materials]</h3><p><strong>→ Crowdfunding:</strong></p><ul><li><a href='https://youtu.be/8b5-iEnW70k'>What is Crowdfunding?</a></li><li><a href='https://www.researchgate.net/publication/261359489_Crowdfunding_Why_People_are_Motivated_to_Post_and_Fund_Projects_on_Crowdfunding_Platforms'>Why are people motivated to post and fund projects on crowdfunding platforms?</a>*</li><li><a href='https://www.inc.com/larry-kim/op-10-crowdfunding-platforms-of-2018.html'>The ten crowdfunding platforms of 2018</a></li></ul><p><strong>→ Due Diligence:</strong></p><ul><li><a href='https://youtu.be/QJsjtvSMK9Y'>What is Due Diligence?</a>***</li><li><a href='https://www.bcg.com/capabilities/mergers-acquisitions-divestitures/due-diligence.aspx'>BCG - M&amp;A and Divestitures</a></li><li><a href='https://blog.growthfunders.com/how-to-conduct-due-diligence-when-investing-in-start-ups'>How to conduct Due Diligence?</a></li><li><a href='https://corporatefinanceinstitute.com/resources/knowledge/deals/types-of-due-diligence/'>Types of Due Diligence</a>*</li><li><a href='https://www.businesstimes.com.sg/companies-markets/roxy-pacific-not-proceeding-with-commercial-building-buy-after-due-diligence'>Case Study Due Diligence</a></li></ul><p>&nbsp;</p><h3><a name='header-n671' class='md-header-anchor '></a>[Suggestion readings]</h3><ul><li><a href='https://www.inside.com.tw/article/5897-the-reality-of-crowdfunding-is-not-raising-funds-but-marketing'>群眾募資的現實面貌：不是集資，而是行銷</a>***</li><li><a href='http://finance.technews.tw/2017/04/04/people-raise-money-is-an-innovative-entrepreneurial-angel-or-demon/'>【5 分鐘 Fintech】群眾募資是創新搖籃，更考驗民眾智慧</a></li><li><a href='https://wiki.mbalib.com/zh-tw/%E8%B4%A2%E5%8A%A1%E5%B0%BD%E8%81%8C%E8%B0%83%E6%9F%A5'>MBA lib：財務盡責調查</a>、<a href='https://wiki.mbalib.com/zh-tw/%E5%95%86%E4%B8%9A%E5%B0%BD%E8%81%8C%E8%B0%83%E6%9F%A5'>商業盡職調查</a></li><li><a href='https://www.ecounsel.net/zh/2018/03/17/%E7%A7%91%E6%8A%80%E5%BE%8B%E5%B8%AB-vi%EF%BC%9A%E5%9F%B7%E8%A1%8Cdue-diligence%E4%B9%8B%E5%B0%88%E6%A5%AD%E8%88%87%E6%A0%BC%E8%AA%BF/'>科技律師 (vi)：執行Due Diligence之專業與格調</a></li><li><a href='https://startup20.org/2012/09/22/%E5%8B%9F%E8%B3%87-3-%E4%BA%86%E8%A7%A3due-diligence-dd%EF%BC%8C%E6%8A%95%E8%B3%87%E9%A2%A8%E9%9A%AA%E8%A9%95%E4%BC%B0-%E7%9A%84%E9%81%8E%E7%A8%8B/'>募資 – 3, 了解Due Diligence (DD，投資風險評估) 的過程</a></li></ul><p>&nbsp;</p><h3><a name='header-n685' class='md-header-anchor '></a>[Notes]</h3><h4><a name='header-n686' class='md-header-anchor '></a>1. 群眾募資/眾籌</h4><ul><li><p>群眾募資，又稱群眾集資、公眾集資、群募、公眾籌款或眾籌，是指個人或小企業通過網際網路向大群眾募資集資金的一種集資方式。群眾募資主要透過網際網路展示宣傳計劃內容、原生設計與創意作品，並與大眾解釋通過募集資金讓此作品量產或實現的計劃。支持、參與的群眾，則可藉由「購買」或「贊助」的方式，投入該計畫以實現計劃、設計或夢想。在一定的時限內，達到事先設定募資的金額目標後即為募資成功，開始使用募得的金錢進行計劃。</p><p><img src='assets/crowsfunding.jpg' alt='crowsfunding' referrerPolicy='no-referrer' /></p><p><img src='assets/crowsfunding-2.jpg' alt='crowsfunding-2' referrerPolicy='no-referrer' /></p></li></ul><p>當台灣人在思考群眾募資的時候，我們要面對幾個現實：</p><ul><li><a href='https://www.inside.com.tw/2016/06/30/what-is-crowdfunding'>群眾募資</a> 不會解決台灣新創團隊的資金問題，這必須要從資本市場去改變（美國也一樣）</li><li><strong>更重要的是，</strong> <a href='https://www.inside.com.tw/2016/06/30/what-is-crowdfunding'><strong>群眾募資</strong></a> <strong>不會創造更好的新創公司，這必須要從環境去改革</strong></li><li>以台灣目前的新創環境與科技產業規模而言，過度於寄望群募而讓更多新創公司的資源投入 PR，無助於解決問題</li></ul><p>最最最重要的是，</p><ul><li>群募可以是非常重要的預購平台。台灣目前的科技產品多難銷至歐美國家，若能了解歐美群募平台的生態，台灣的 B2C 公司可以透過群募管道進入歐美市場。（以可行產品為前提</li></ul><p>&nbsp;</p><h4><a name='header-n705' class='md-header-anchor '></a>2. 盡責調查</h4><p>「Due diligence」是財務、投資與工程都常常使用的字，翻譯成「盡職調查」，通常就是在行動（買賣、投資）前要做好的各種準備。承襲我們台灣人喜歡說字母的習慣，這個步驟通常被簡稱為 DD。簡單說就是做重要決定之前應該要做的功課和檢核。原子筆要拿起來在旁邊的廢紙上寫幾個字看順不順，房子要看權狀看風水還要打聽會不會是凶宅… 這些，其實都是DD。”Due“ 原本指的是「適當的、合理的」，而 ”Diligence” 則是「注意、勤勉」；交易上用白話文講，就是「買之前要小心把貨看清楚、和賣方把話講清楚」。</p><blockquote><p>編按：盡職調查（Due Diligence Investigation）又稱謹慎性調查，一般是指投資人在與目標企業達成初步合作意向後，經協商一致，投資人對目標企業一切與本次投資有關的事項進行現場調查、資料分析的一系列活動。其主要是在收購（投資）等資本運作活動時進行，但企業上市發行時，也會需要事先進行盡職調查，以初步瞭解是否具備上市的條件。</p></blockquote><ul><li>“Due diligence” is just the fancy name given to the research process that is carried out prior to making an investment. It usually involves an investigation into a person or people, a business, or a marketplace.</li></ul><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n714' class='md-header-anchor '></a>20181231#10: Measuring performance &amp; impact of Social Ventures</h2><p><code>這一單元可以直接看推薦閱讀中，社企流的專題報導。</code></p><h3><a name='header-n716' class='md-header-anchor '></a>[Preview materials]</h3><p><strong>→  Social Impact Measurement:</strong></p><ul><li><a href='https://youtu.be/F2hr94eiZ4w'>Why measure social impact?</a>*</li><li><a href='https://www.evernote.com/shard/s308/sh/c1dc01ca-910b-4d03-b093-9ed346eadb33/cb2c984543cb728edc09523a9ca5ba02'>The challenges of measuring social impact</a></li><li><a href='https://youtu.be/BgI3rzO3mHk'>Social Impact Measurement (SIM) Assessment Overview</a>***</li></ul><p><strong>→  Theory of Change:</strong></p><ul><li><a href='https://youtu.be/dpb4AGT684U'>Measuring your social impact - Theory of Change</a>**</li><li><a href='https://youtu.be/lm8nQeSPDpU'>How to think about and measure Non-profit impact?</a> ***</li><li><a href='https://www.socialventures.com.au/sva-quarterly/how-to-measure-outcomes/'>How to measure outcomes?</a></li><li><a href='https://www.forbes.com/sites/devinthorpe/2017/02/26/how-social-entrepreneurs-begin-to-measure-impact/#1b4d850f5787'>How social entrepreneurs begin to measure impact</a></li></ul><p><strong>→  Social impact metrics:</strong></p><ul><li><a href='https://www.sopact.com/social-impact-metrics#social_impact_metrics'>Social impact metrics</a>***</li><li><a href='https://www.triplepundit.com/2017/01/8-social-impact-metrics-need-know/'>8 Social Impact Metrics you Need to Know About</a></li><li><a href='https://drive.google.com/file/d/1d4BsjSnbz_8k2hLBgeMLKE4dllv7nFa-/view'>MaRS: Social Impact Metrics Guidebook</a></li></ul><p>&nbsp;</p><h3><a name='header-n744' class='md-header-anchor '></a>[Suggestion readings]</h3><ul><li><a href='https://www.seinsights.asia/specialfeature/5836'>社企流：衡量你的社會影響力專題</a>＊＊</li><li><a href='https://opinion.cw.com.tw/blog/profile/382/article/4444'>企業的社會價值該如何衡量？</a>＊</li><li><a href='https://www.hkisia.org/blog/ltgt-social-impact-assessment'>社會影響評估要回答的九個問題</a></li><li><a href='http://www.theoryofchange.org/wp-content/uploads/toco_library/pdf/ToCBasics.pdf'>Theory of Change Basics: A Primer on Theory of Change</a></li><li><a href='https://www.seinsights.asia/story/1434/795/2760'>社會創新，到底是創什麼？（一）：我們創造的是一種新的社會影響</a></li></ul><p>&nbsp;</p><h3><a name='header-n757' class='md-header-anchor '></a>[Notes]</h3><h4><a name='header-n758' class='md-header-anchor '></a>1. 改變理論</h4><h5><a name='header-n759' class='md-header-anchor '></a>定義</h5><ul><li><p>改變理論（英語：Theory of change = ToC），是一種為了企劃、參與決策與評量之特別型態的方法學，被用於慈善、非營利與政府之諸部門以促進社會變化。改變理論先定義長程目標，然後倒推規劃確認其必要諸條件。</p><ul><li>改變理論以描繪短程、中程、常程效果之原因連結輪廓，解釋在某一倡議之變化過程。已確認的變化，以效果路線規劃，顯示每個效果與其他效果的邏輯關係與時間流程。解釋效果之間的連結之理由或論述為何此效果是另一效果的預備條件。</li><li>改變理論之創新在於「區別想要與實際效果的差異」，以及「在他們決定介入形式以達到那些效果之前，要求諸利害關係人先形塑其所想要的效果」。一般會錯誤描述「改變理論」只是一種企劃與評量的方法學。「改變理論」是一種批判理論，可以保障權力動態之透明性分布。進而，其過程必須包容在達成解決方案之許多觀點與參與者。 </li><li>「改變理論」依照預期用途，可以開始於某一倡議之任何階段。理論首先發展於通知某一倡議之企劃時是最好。已經制定了某一改變模型，參與者可以對策略與戰術作出更加知情的決策。若可以獲得監測與評量的數據時，當數據證據顯示時，諸利害關係人可以定期改善「改變理論」。「改變理論」可藉由閱讀方案數據、訪談諸利害關係者與分析資料，作回顧式發展。此常被作，當評量反映出何者是已作與何者是未作時，以理解過去與策劃未來。</li></ul></li></ul><h5><a name='header-n770' class='md-header-anchor '></a>非營利/慈善組織的影響力評估</h5><ul><li>Measuring the impact of a nonprofit/charity can be a massive challenge. Social change rarely fits into a nice buckets that can be tracked. These three sections represent the larger strategy of the organization, the theory of change, and the practical performance measurement. This outline compresses a lot standard nonprofit planning documents in attempt to distill the mission critical thinking needed to get started. Each area has questions a nonprofit should discuss and answer as a team.</li></ul><ol start='' ><li><p>Purpose and Intent: Determine purpose of the organization.</p><ul><li>What is the long term goal?</li><li>What need in society drove the creation of this organization?</li><li>What would need to happen for us to (successfully) go out of business?</li></ul></li><li><p>Defining Outcomes and Indicators: Identify outcomes that demonstrate impact.</p><ul><li>What specific changes and outcomes will demonstrate the success you outlined above</li><li>Outline Key Impact Indicators  — (warning it’s hard)</li><li>What indicators will you use to measure those specific changes?</li></ul></li><li><p>Track indicators over time: Choose the methods you will you use to track each indicator. No matter which types of indicators, make sure results are stored in a consistent way in an online database. Tracking and analyzing is an important role, make sure there is someone who’s job it is to do this, preferably a data analyst.</p></li></ol><p>&nbsp;</p><h4><a name='header-n796' class='md-header-anchor '></a>2. 衡量你的社會影響力</h4><p>面對複雜的社會議題，我們怎麼知道自己如預期般帶來正向改變？又該怎麼尋找有效的行動切入點，把資源花在刀口上？若你曾嘗試回答這些問題，其實你已經站上了衡量社會影響力的起點。雖說動心起念相當單純，卻因為社會影響力主觀、難以被界定與衡量的性質，導致想要回答上述問題一點都不容易。也因此，形形色色方法論和工具應運而生，希望協助使用者辨識、分析與衡量組織影響力。</p><p>不論是哪種方法論，大多是希望提供「一套好上手的工具」、「一個新的審視角度」和「一種便於溝通的語言」，引導組織思考，自身行動是在什麼機制之下帶來多少改變、哪些機制能最大化投入資源的效益、以及如何和他人闡述、分享累積的學習與成果。</p><h5><a name='header-n799' class='md-header-anchor '></a>瞭解改變如何發生，是放大改變規模的第一步</h5><p>可能有人會好奇，難道不衡量社會影響力，就代表沒有影響力嗎？</p><p>當然不是。許多社會目的組織（Social purpose organization，泛指以實現公眾利益與社會價值為目標而設立的組織，以下簡稱組織）為了改善社會問題，積年累月地投注心力，在各自的領域累積了深厚的知識與執行經驗，除了在第一線服務之外，亦成為該領域的前輩，是不少年輕團隊諮詢請益的對象，他們的影響力不會因為不衡量、不言說就消失。</p><blockquote><p>然而，衡量、評估影響力仍有其積極意義，代表組織願意主動探究其行動模式是否能有效率地達成目標，進而解決社會問題。</p></blockquote><p>主動衡量影響力表示抱持社會使命而成立的組織，基於兌現組織宗旨的承諾，以及因標榜理念而接收到的社會支持，願意以當責（Accountable）的態度面對員工、產品使用者、消費者、受益者等利害關係人，在能力所及的範圍內追蹤、評估、分析組織為社會帶來的改變，適當地與利害關係人分享資訊。</p><p>而在功能面上，持續追蹤、衡量影響力能協助組織持續改善內部方針，以及讓組織的行動和表現被外界檢視，達到內部「改善」（Improving）與外部「證明」（Proving）兩大效果：</p><ul><li>內部改善（Improving）：好的評估工具能引導使用者釐清影響改變的關鍵因素和因果邏輯，進而自我診斷，找出以往忽視的盲點。如果能辨別出確實能解決問題的機制，組織便能更專注在有效的方法上，以同樣的資源，創造更大的效益。或者，組織也可以透過向外分享這些知識，讓更多人加入改善問題的行列，放大改變的規模。</li><li>外部證明（Proving）：如今大眾參與公益的方式相當多元，如消費支持、捐款支持、擔任志工、揪團加入群眾募資等選擇，讓許多支持者在面對個人有限的公益資源時（如時間、捐款額度、消費預算等），常常不知該如何抉擇。因此，除了組織的成立宗旨和理念，現在有更多支持者想瞭解自己投入的資源將如何被運用、能創造多少改變，以此作為決策考量之一。而評估的結果即是組織很好的溝通素材。  </li></ul><h5><a name='header-n811' class='md-header-anchor '></a>衡量社會影響力知易行難？解析 3 大門檻，提供解方助組織走向「知行合一」</h5><blockquote><p>當組織能明確展現成果、闡述改善問題的機制，除了展現組織無論表現好壞，都有揭露與承擔的責信精神，亦能以具體成果說服他人，證明組織標榜的願景並非空話，而是具體可實現的未來。</p></blockquote><p>當組織想自行衡量社會影響力時，會遇到的阻力與考量包括：（1）專業門檻高，小組織難執行、（2）成本高昂，效益未知、（3）不夠緊急也不夠重要，執行順序往後排。</p><p>該如何破解上述 3 個門檻？以下 3 個建議，提供給想要執行影響力評估的組織參考。（1）回歸使用需求，選擇當下最適合的評估方法、（2）尋找呈現影響力的最佳方式、（3）能從今天開始，就不要等明天。</p><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n818' class='md-header-anchor '></a>20190107#11: Sustainability and scaling Social Ventures</h2><h3><a name='header-n819' class='md-header-anchor '></a>[Preview materials]</h3><p><strong>→  Sustainability:</strong></p><ul><li><a href='https://www.investopedia.com/terms/s/sustainability.asp'>What is it?</a>*</li><li><a href='https://hbr.org/2015/05/two-keys-to-sustainable-social-enterprise'>Two keys to sustainability</a> （<a href='https://www.hbrtaiwan.com/article_content_AR0003089.html'>中文版：讓社會企業永續經營</a>）*</li><li><a href='http://www.sci-ubc.com/wp-content/uploads/2013/09/Financial-Sustainability-for-Social-Ventures.pdf'>Financial sustainability for social ventures</a></li><li>Sustainability explained (<a href='https://youtu.be/QptExNJCgEU'>4 mins. video</a>, <a href='https://youtu.be/rmQby7adocM'>9 mins. in detail concepts</a>)</li><li><a href='https://www.theguardian.com/sustainable-business/blog/best-practices-sustainability-us-corporations-ceres'>Best practices in sustainability: Ford, Starbucks and more cases</a></li></ul><p><strong>→  Scaling:</strong></p><ul><li><a href='https://www.entrepreneur.com/article/318479'>Scaling social enterprise</a></li><li><a href='https://youtu.be/PGgIAnehjR8'>Challenges of scaling up</a>*</li><li><a href='https://youtu.be/kd5qWtkx9HM'>Scaling your company I: Starting to scale</a>*</li><li><a href='https://youtu.be/lhcSkax-PpU'>Scaling your company II: Choosing a growth strategy</a></li><li><a href='https://www.theguardian.com/social-enterprise-network/2012/oct/01/social-ventures-scalable-models-fly'>How social ventures can build scalable models</a></li></ul><p>&nbsp;</p><h3><a name='header-n845' class='md-header-anchor '></a>[Suggestion readings]</h3><ul><li><a href='https://www.hbrtaiwan.com/article_content_AR0002446.html'>社會企業：下一階段挑戰是規模化</a>*</li><li>龔建嘉：<a href='https://www.businesstoday.com.tw/article/category/154768/post/201804110022/%E8%B7%9F%E5%BE%B7%E5%9C%8B%E4%BA%BA%E5%AD%B8%E6%B0%B8%E7%BA%8C%E7%B6%93%E7%87%9F'>跟德國人學永續經營</a>、<a href='https://www.businesstoday.com.tw/article/category/154768/post/201807040018/%E7%A4%BE%E6%9C%83%E5%89%B5%E6%96%B0%E9%9C%80%E8%A6%81%E8%A6%8F%E6%A8%A1%E5%8C%96'>社會創新需要規模化</a></li><li><a href='https://www.ted.com/talks/michael_porter_why_business_can_be_good_at_solving_social_problems/transcript?Joseph&language=zh-tw'>規模化思考：為何企業能更好的解決社會問題？</a></li></ul><p>&nbsp;</p><h3><a name='header-n854' class='md-header-anchor '></a>[Notes]</h3><h4><a name='header-n855' class='md-header-anchor '></a>1. 永續性</h4><ul><li>定義：滿足當前世代的需要，且不要損害後代子孫滿足其未來需要的能力。</li><li>當代在探討世代正義時，最常引用「布蘭特報告（Brundtland Report）」中
+永續發展的定義，即 「人類的發展能夠滿足當代的需求，且不致危及到我們的
+子孫滿足其需要的能力（Development that Meets the Needs Of the
+Present, Without Compromising the Ability of Future Generations to
+Meet Their Own Needs.）。」</li></ul><h4><a name='header-n861' class='md-header-anchor '></a>2. 規模化</h4><p>2007 到 2013 年，可以說是台灣社會企業有了些成果的第一階段。為什麼這麼說？第一，媒體開始有報導，重量級的企業家，例如施振榮先生也出來大力倡導，大家對社會企業開始有了解；第二，社會企業模式也更多元，像是《大誌》（以遊民為扶助對象的文創媒體）、「以立國際」提供國際志工服務，還有，勝利潛能開發中心從非營利組織轉型，甚至開了全台第一家身心障礙團隊經營的便利商店；第三，大家對於社會企業也有了更多參與。</p><p>2013 年之後，可以說是第二階段，我非常關心的是，究竟台灣的社會企業以及它們想做的事，能不能夠「規模化」（scalability）。什麼是規模化？我舉一個例子， 印度有一家小公司叫 d-light，它生產的太陽能電燈做得很便宜，14 美元一個，消費者買了它的燈，白天放在太陽底下蓄能，晚上就可以發電發光。</p><p>社會企業的定義，同時兼有公益性與商業性。從公益性看，全球有數十個國家沒有電網，d-light提供的燈可以大量滿足需求；從商業性看，它在富裕國家用比較高的定價賣一個燈，就可以有利潤用比較便宜的價格在窮國提供商品。它不用募款、不靠捐贈，透過市場機制，就可以同時達成公益與商業需求。從這個角度看，它是個很好的社會企業。那麼，d-light 是不是一家可以規模化的公司呢？只要能找到工廠幫它生產、只要找到市場，它的模式就可以複製，不會因為要放大規模而必須要投入等倍的資源。它是可以規模化的社會企業。</p><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n867' class='md-header-anchor '></a>20190114#12: Leadership and presentation skills</h2><h3><a name='header-n868' class='md-header-anchor '></a>[Preview materials]</h3><p><strong>→  Leadership:</strong></p><ul><li><a href='https://www.mindtools.com/pages/article/newLDR_41.htm'>What is leadership?</a></li><li><a href='http://onlineincubator.eu/wp-content/uploads/2017/01/leadership.pdf'>Leadership and management in social enterprises</a></li><li><a href='https://hbr.org/2004/01/managers-and-leaders-are-they-different'>Managers and Leaders: Are they different?</a> （<a href='https://www.hbrtaiwan.com/article_content_AR0002811.html'>中文版</a>）</li><li><a href='https://www.forbes.com/sites/lizryan/2016/03/27/management-vs-leadership-five-ways-they-are-different/#216da4e069ee'>Management vs. Leadership</a></li><li><a href='http://changingminds.org/disciplines/leadership/articles/manager_leader.htm'>Leadership vs. Management</a></li><li><a href='https://www.mckinsey.com/industries/social-sector/our-insights/what-social-sector-leaders-need-to-succeed'>What social sector leaders need to succeed</a></li></ul><p><strong>→  Presentation skills:</strong></p><ul><li><a href='https://www.macmillanihe.com/studentstudyskills/page/Presentation-skills/'>Presentation skills</a></li><li><a href='https://www.theguardian.com/careers/top-tips-for-improving-your-presentation-skills'>Top tips for improving your presentation skills</a> </li><li><a href='https://www.youtube.com/watch?v=MnIPpUiTcRc'>How to give a great presentation?</a></li></ul><p>&nbsp;</p></div>
+</body>
+</html>
